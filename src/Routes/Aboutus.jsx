@@ -8,8 +8,7 @@ export default function Aboutus(){
         setcursorStyle(prevStyle => prevStyle === 'default' ? 'custom' : 'default');
     };
     return (
-        
-        <div className={`App ${cursorStyle}`}> 
+        <div className={`About-Us-Container ${cursorStyle}`}> 
             <h1 className='page-header'>We are team PROTA 172<button id='secretbutton'onClick={() => changeCursor()}>2</button>2</h1>
             <h2 id='page-subheader'>We are a First Tech Challenge team formed in 2019 we have since competed in various events</h2>
             <h3 className='list-container'>Events Competed in</h3>

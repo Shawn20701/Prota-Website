@@ -1,10 +1,9 @@
-import './Programming.css'
+import  './Programming.css'
 import Github from '../assets/Github.svg'
 import Java from '../assets/Java.svg'
 import React from '../assets/React.svg'
 export default function Programming(){
     return (
-        <>
         <div id='Container'>
             <div className='programming-container'>
                 <div id='title-container'>
@@ -27,6 +26,6 @@ export default function Programming(){
                 </div>
             </div>
         </div>
-        </>
+
     );
 }

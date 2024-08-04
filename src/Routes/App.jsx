@@ -117,7 +117,6 @@ function App() {
     setrandomnumber(newNumber);
   }
   return (
-    <body>
       <div className='App' data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
         <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'}/>
         <Toggle 
@@ -146,7 +145,6 @@ function App() {
       </div>
       {snowActive && <Snowfall />}
     </div>
-  </body>
   )
 }
 export default App

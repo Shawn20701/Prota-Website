@@ -11,15 +11,6 @@
     --prg-font-size-content: 2.3rem;
     --prg-font-size-subcontent: 1.25rem;
 }
-html, body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: scroll;
-}
-body {
-    background: linear-gradient(to right, var(--prg-bg-color), var(--prg-fg-color));
-}
 #Programming-Title{
     font-size: var(--prg-font-size-title);
     font-family: var(--prg-font-family);
@@ -27,6 +18,7 @@ body {
     padding-top: 1rem;
     position: relative;
     width: max-content;
+    margin-top:0;
 }
 #Programming-Title::after {
     content: '';
@@ -138,6 +130,7 @@ body {
     background: linear-gradient(to right, var(--prg-bg-color), var(--prg-fg-color));
     background-repeat: repeat-y;
     background-size: cover;
-    height: auto;
+    margin: 0;
+    padding:0;
     z-index: 0;
 }

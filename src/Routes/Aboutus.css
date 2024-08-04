@@ -1,11 +1,9 @@
-html, body {
-    cursor: default;
-    background-color: var(--background-color);
-    transition: background-color 250ms ease-in-out;
-    height: 100%;
+.About-Us-Container{
     margin: 0;
     padding: 0;
-  }
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
 .page-header {
     font-family: Impact;
     font-size: 5rem;
@@ -15,6 +13,7 @@ html, body {
     background-clip: text;
     -webkit-background-clip: text;
     background-clip: text;
+    margin-top: 0;
 }
 #page-subheader {
     font-family: Impact;
@@ -47,12 +46,13 @@ html, body {
     color: var(--tertiary-text-color);
 }
 .space {
-    height: 5rem;
+    height: 5vh;
+    margin-bottom: 0;
 }
-.App.default {
+.About-Us-Container.default {
     cursor: default;
 }
-.App.custom {
+.About-Us-Container.custom {
     cursor: url('../assets/Cat.png') 16 16, pointer; 
 }
 #secretbutton{

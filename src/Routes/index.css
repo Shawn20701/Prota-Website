@@ -3,19 +3,15 @@ html, body {
   background-color: var(--background-color);
   transition: background-color 250ms ease-in-out;
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  margin-left: 5vw;
 }
 .App {
   background-color: var(--background-color);
   transition: background-color 250ms ease-in-out;
-  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-left: 10vw;
+  
 }
 .Page-header {
   text-align: center;
