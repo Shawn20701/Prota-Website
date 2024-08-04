@@ -1,0 +1,143 @@
+:root {
+    --prg-bg-color: aqua;
+    --prg-fg-color: orange;
+    --prg-primary-text-color: maroon;
+    --prg-secondary-text-color: black;
+    --prg-teriary-text-color: white;
+    --prg-link-color: blue;
+    --prg-font-family: 'Franklin Gothic Medium';
+    --prg-font-size-title: 5rem;
+    --prg-font-size-subheader: 3rem;
+    --prg-font-size-content: 2.3rem;
+    --prg-font-size-subcontent: 1.25rem;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: scroll;
+}
+body {
+    background: linear-gradient(to right, var(--prg-bg-color), var(--prg-fg-color));
+}
+#Programming-Title{
+    font-size: var(--prg-font-size-title);
+    font-family: var(--prg-font-family);
+    color: var(--prg-primary-text-color);
+    padding-top: 1rem;
+    position: relative;
+    width: max-content;
+}
+#Programming-Title::after {
+    content: '';
+    background: linear-gradient(to right, crimson, violet);
+    border-radius: 50px;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 0;
+    transition: all 0.6s ease;
+}
+.content {
+    text-align: left;
+    color: var(--prg-primary-text-color);
+    font-size: var(--prg-font-size-content);
+}
+.img-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 30rem;
+    flex-wrap: wrap; 
+}
+
+.prg-img {
+    height: 128px;
+    width: 128px;
+    animation: shiftupdown 10s linear 0s infinite;
+    position: relative; 
+}
+
+@keyframes shiftupdown {
+    0% { transform: translateY(-1rem); }
+    50% { transform: translateY(1rem); }
+    100% { transform: translateY(-1rem); }
+}
+.sub-img-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 30rem;
+    flex-wrap: wrap;
+}
+.sub-text{
+    font-size: var(--prg-font-size-subcontent);
+    text-wrap: wrap;
+    width: 128px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    position: relative;
+}
+#Github-img-text::after, #Github-img-text::before{
+    width: 135px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    background-image: conic-gradient(red, blue);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+#Github-img-text::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+#Java-img-text::after, #Java-img-text::before{
+    width: 132px;
+    height: 135px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    background-image: conic-gradient(red, blue);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+#Java-img-text::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+#React-img-text::after, #React-img-text::before{
+    width: 132px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    background-image: conic-gradient(red, blue);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+}
+#React-img-text::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+#Container{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(to right, var(--prg-bg-color), var(--prg-fg-color));
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: auto;
+    z-index: 0;
+}

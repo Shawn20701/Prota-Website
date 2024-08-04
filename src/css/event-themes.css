@@ -1,0 +1,136 @@
+/* Default Theme */
+:root {
+    --background-color: #f5f5dc; /* Antique white */
+    --foreground-color: #800000; /* Maroon */
+    --foreground-text-color: #ffffff; /* White (easy to read on dark foreground) */
+    --primary-text-color: #000000; /* Black */
+    --secondary-text-color: #ffffff; /* White */
+    --tertiary-text-color: #ff8c00; /* Dark orange */
+    --font-main: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --toggle-bg: #f0f000; /* Light yellow */
+    --toggle-fg: #ff9900; /* Bright orange */
+    --link-color: #dc143c; /* Crimson */
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+    --background-color: #1a1a1a; /* Almost black */
+    --foreground-color: #003366; /* Dark blue */
+    --foreground-text-color: #ffffff; /* White (easy to read on dark foreground) */
+    --primary-text-color: #9b30ff; /* Dark violet */
+    --secondary-text-color: #ffffff; /* White */
+    --tertiary-text-color: #4169e1; /* Royal blue */
+    --toggle-bg: #003366; /* Dark blue */
+    --toggle-fg: #87cefa; /* Light blue */
+    --link-color: #00ffff; /* Aqua */
+}
+
+/* Spooky Light Theme 1 */
+[data-event='Spooky'][data-theme='light'][data-num='1'] {
+    --background-color: #ffefdb; /* Light cream */
+    --foreground-color: #ff8c00; /* Orange */
+    --foreground-text-color: #000000; /* Black (easy to read on light orange) */
+    --primary-text-color: #d9534f; /* Coral red */
+    --secondary-text-color: #e94e77; /* Hot pink */
+    --tertiary-text-color: #f7b7a3; /* Light coral */
+    --link-color: #ff6f00; /* Orange */
+}
+
+/* Spooky Dark Theme 1 */
+[data-event='Spooky'][data-theme='dark'][data-num='1'] {
+    --background-color: #2e2e2e; /* Dark gray */
+    --foreground-color: #ff4500; /* Orange red */
+    --foreground-text-color: #ffffff; /* White (easy to read on dark orange) */
+    --primary-text-color: #ffa07a; /* Light salmon */
+    --secondary-text-color: #ff6347; /* Tomato */
+    --tertiary-text-color: #d3b886; /* Light gold */
+    --link-color: #ff4500; /* Orange red */
+}
+
+/* Spooky Light Theme 2 */
+[data-event='Spooky'][data-theme='light'][data-num='2'] {
+    --background-color: #eaeaea; /* Light gray */
+    --foreground-color: #a0a0a0; /* Gray */
+    --foreground-text-color: #000000; /* Black (easy to read on gray) */
+    --primary-text-color: #6c6c6c; /* Dim gray */
+    --secondary-text-color: #7d7d7d; /* Gray */
+    --tertiary-text-color: #555555; /* Dark gray */
+    --link-color: #808080; /* Gray */
+}
+
+/* Spooky Dark Theme 2 */
+[data-event='Spooky'][data-theme='dark'][data-num='2'] {
+    --background-color: #1e1e1e; /* Very dark gray */
+    --foreground-color: #888888; /* Medium gray */
+    --foreground-text-color: #000000; /* Black (easy to read on medium gray) */
+    --primary-text-color: #b0b0b0; /* Light gray */
+    --secondary-text-color: #666666; /* Medium gray */
+    --tertiary-text-color: #333333; /* Dark gray */
+    --link-color: #999999; /* Gray */
+}
+
+/* Spooky Light Theme 3 */
+[data-event='Spooky'][data-theme='light'][data-num='3'] {
+    --background-color: #f5f5f5; /* Very light gray */
+    --foreground-color: #6a0dad; /* Dark violet */
+    --foreground-text-color: #ffffff; /* White (easy to read on dark violet) */
+    --primary-text-color: #6a0dad; /* Dark violet */
+    --secondary-text-color: #8a2be2; /* Blue violet */
+    --tertiary-text-color: #9b30ff; /* Dark violet */
+    --link-color: #d8bfd8; /* Thistle */
+}
+
+/* Spooky Dark Theme 3 */
+[data-event='Spooky'][data-theme='dark'][data-num='3'] {
+    --background-color: #333333; /* Dark gray */
+    --foreground-color: #4b0082; /* Indigo */
+    --foreground-text-color: #ffffff; /* White (easy to read on indigo) */
+    --primary-text-color: #d8bfd8; /* Thistle */
+    --secondary-text-color: #8a2be2; /* Blue violet */
+    --tertiary-text-color: #9b30ff; /* Dark violet */
+    --link-color: #6a0dad; /* Dark violet */
+}
+
+/* Spooky Light Theme 4 */
+[data-event='Spooky'][data-theme='light'][data-num='4'] {
+    --background-color: #f8f8ff; /* Ghost white */
+    --foreground-color: #b0b0b0; /* Light gray */
+    --foreground-text-color: #000000; /* Black (easy to read on light gray) */
+    --primary-text-color: #b0b0b0; /* Light gray */
+    --secondary-text-color: #000000; /* Black */
+    --tertiary-text-color: #e0e0e0; /* Light gray */
+    --link-color: #b0b0b0; /* Light gray */
+}
+
+/* Spooky Dark Theme 4 */
+[data-event='Spooky'][data-theme='dark'][data-num='4'] {
+    --background-color: #1c1c1c; /* Very dark gray */
+    --foreground-color: #dcdcdc; /* Light gray */
+    --foreground-text-color: #000000; /* Black (easy to read on light gray) */
+    --primary-text-color: #d0d0d0; /* Light gray */
+    --secondary-text-color: #ffffff; /* White */
+    --tertiary-text-color: #a0a0a0; /* Gray */
+    --link-color: #c0c0c0; /* Silver */
+}
+
+/* Spooky Light Theme 5 */
+[data-event='Spooky'][data-theme='light'][data-num='5'] {
+    --background-color: #ffebcd; /* Blanched almond */
+    --foreground-color: #ff8c00; /* Dark orange */
+    --foreground-text-color: #000000; /* Black (easy to read on dark orange) */
+    --primary-text-color: #ff8c00; /* Dark orange */
+    --secondary-text-color: #000000; /* Black */
+    --tertiary-text-color: #ff4500; /* Orange red */
+    --link-color: #ff6347; /* Tomato */
+}
+
+/* Spooky Dark Theme 5 */
+[data-event='Spooky'][data-theme='dark'][data-num='5'] {
+    --background-color: #2e2e2e; /* Dark gray */
+    --foreground-color: #ff8c00; /* Dark orange */
+    --foreground-text-color: #ffffff; /* White (easy to read on dark orange) */
+    --primary-text-color: #ffa500; /* Orange */
+    --secondary-text-color: #ffffff; /* White */
+    --tertiary-text-color: #ff6347; /* Tomato */
+    --link-color: #ff8c00; /* Dark orange */
+}

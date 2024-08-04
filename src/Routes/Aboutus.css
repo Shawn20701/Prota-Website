@@ -1,0 +1,70 @@
+html, body {
+    cursor: default;
+    background-color: var(--background-color);
+    transition: background-color 250ms ease-in-out;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.page-header {
+    font-family: Impact;
+    font-size: 5rem;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right, var(--foreground-color), var(--link-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#page-subheader {
+    font-family: Impact;
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}
+.list-container {
+    font-family: Impact;
+    font-size: 4.5rem;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.item {
+    list-style-type: none;
+    font-size: 3.5rem;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.item:hover{
+    transform: translateY(1.5rem) scale(1.2);
+    color: var(--tertiary-text-color);
+}
+.space {
+    height: 5rem;
+}
+.App.default {
+    cursor: default;
+}
+.App.custom {
+    cursor: url('../assets/Cat.png') 16 16, pointer; 
+}
+#secretbutton{
+    cursor: pointer;
+    border: unset;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 5rem;
+    font-family: Impact;
+    color: transparent;
+    background: linear-gradient(to right, var(--foreground-color), var(--link-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

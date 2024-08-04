@@ -1,0 +1,36 @@
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 10vw; 
+    height: 100vh; 
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--foreground-color), var(--background-color));
+    gap: 1rem; 
+    box-sizing: border-box; 
+    z-index: 1000; 
+    overflow-y: auto;
+}
+.navbar-button {
+    color: var(--foreground-text-color);
+    border-radius: 5px;
+    border: 2px solid var(--secondary-text-color); 
+    font-family: var(--font-main);
+    font-size: 1.5rem; 
+    padding: 0.5rem 1rem; 
+    background-color: transparent; 
+    cursor: pointer; 
+    transition: all 0.6s ease-in-out;
+}
+.navbar-button:hover{
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+    scale: 1.03;
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+
