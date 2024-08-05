@@ -1,0 +1,49 @@
+.page-container{
+    background-color: var(--background-color);
+    width: 100vw;
+    min-height: 100vh;
+}
+#Page-header{
+    color: transparent;
+    text-align: center;
+    font-size: var(--prg-font-size-subheader);
+    background: linear-gradient(to right, lightblue, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+#Explanation{
+    color: darkviolet;
+    font-size: var(--prg-font-size-content);
+}
+#clrdatabutton{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    left: 10vw;
+}
+#clrdatabutton:hover{
+    scale: 1.1;
+    background-color: #610d07;
+}
+#submit{
+    background-color: aquamarine;
+    position: absolute;
+    left: 2vw;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.6s ease;
+    cursor: pointer;
+}
+#submit:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(10px);
+}

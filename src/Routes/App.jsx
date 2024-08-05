@@ -10,6 +10,7 @@ import santa from '../assets/ff168b056f992b72f13ffb2245f76b4b.png'
 import Halloweendecor from '../Components/Halloween'
 import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
+import Subheader from '../Components/subheader'
 const contentMap = {
   1: (
     <>
@@ -93,6 +94,7 @@ function App() {
       setTimeout(() => {
         sethidden(newHidden);
         setistransitioning(false);
+        console.log(hidden);
       }, 500); 
     }
   };
@@ -133,12 +135,7 @@ function App() {
       <h1 className='Page-header' onMouseOver={handlemouseover} onMouseLeave={handlemouseleave}>PR<HiddenButton isSnowman={isSnowman} onToggle={handleToggleSnowman} /><Tree istree={istree} onToggle={handleToggleTree} />A 17222</h1>
       <div className='fun-fact' style={{opacity: opacitypercent / 100, position:visible}}>Hi :3</div>
       <br></br>
-      <h2 className='subheader'>
-        <div className='main-page-sel' onMouseOver={() =>handleChangeContent(1)}>Who are we?</div>
-        <div className='main-page-sel' onMouseOver={() =>handleChangeContent(2)}>Our Mission</div>
-        <div className='main-page-sel' onMouseOver={() =>handleChangeContent(3)}>Recent Events</div>
-        <div className='main-page-sel' onMouseOver={() =>handleChangeContent(4)}>Outreact Events</div>
-      </h2>
+      <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>
       <div className='images-main-page'>
         <img id='main-page-img'className={`image-transition ${istransitioning ? 'istransitioning' : ''}`}src={(imageMap[hidden])}></img>

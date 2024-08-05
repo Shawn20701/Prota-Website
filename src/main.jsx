@@ -4,6 +4,7 @@ import App from './Routes/App.jsx'
 import ErrorPage from './Components/error-page.jsx'
 import Aboutus from './Routes/Aboutus.jsx'
 import Departments from './Routes/Departments.jsx'
+import Pointcalculator from './Routes/Pointcalculator.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/about-us/Departments",
     element: <Departments />
+  },
+  {
+    path: "/betas/Pointcalculator",
+    element: <Pointcalculator />
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
