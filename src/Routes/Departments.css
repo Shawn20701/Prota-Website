@@ -11,7 +11,7 @@
     --prg-font-size-content: 2.3rem;
     --prg-font-size-subcontent: 1.25rem;
 }
-#Programming-Title{
+.title{
     font-size: var(--prg-font-size-title);
     font-family: var(--prg-font-family);
     color: var(--prg-primary-text-color);
@@ -20,7 +20,7 @@
     width: max-content;
     margin-top:0;
 }
-#Programming-Title::after {
+.title::after {
     content: '';
     background: linear-gradient(to right, crimson, violet);
     border-radius: 50px;
@@ -35,6 +35,9 @@
     text-align: left;
     color: var(--prg-primary-text-color);
     font-size: var(--prg-font-size-content);
+}
+.content:last-child{
+    margin-bottom: 0;
 }
 .img-container {
     display: flex;

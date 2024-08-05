@@ -68,3 +68,16 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+#Department-Button{
+    border-radius: 0.75rem;
+    border: 0.3rem solid var(--prg-fg-color);
+    font-size: var(--prg-font-size-subcontent);
+    text-wrap: wrap;
+    scale: 2.25;
+    transition: all 0.6s ease-in-out;
+}
+#Department-Button:hover{
+    scale: 3;
+    transform: translateY(-0.25rem);
+    transition: all 0.6s ease-in-out;
+}

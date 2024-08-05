@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './Routes/App.jsx'
 import ErrorPage from './Components/error-page.jsx'
 import Aboutus from './Routes/Aboutus.jsx'
-import Programming from './Routes/Programming.jsx'
+import Departments from './Routes/Departments.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
     element: <Aboutus />
   },
   {
-    path: "/about-us/Programming",
-    element: <Programming />
+    path: "/about-us/Departments",
+    element: <Departments />
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

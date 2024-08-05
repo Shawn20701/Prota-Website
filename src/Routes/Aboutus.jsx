@@ -19,14 +19,7 @@ export default function Aboutus(){
                 <li className='item'>POWERPLAY</li>
                 <li className='item'>Centerstage</li>
             </ul>
-            <h1 className='page-header'>Our Departments</h1>
-            <ul className='list'>
-                <li className='item'><a className='item' href='/About-us/Programming'>Programming</a></li>
-                <li className='item'><a className='item' href='/About-us/3D-Design'>3D-Design</a></li>
-                <li className='item'><a className='item' href='/About-us/Strategy'>Strategy</a></li>
-                <li className='item'><a className='item' href='/About-us/Building'>Building</a></li>
-                <li className='item'><a className='item' href='/About-us/Outreach'>Outreach</a></li>
-            </ul>
+            <h1 className='page-header'><button id='Department-Button'><a href='/About-us/Programming'>Our Departments</a></button></h1>
             <div className='space'></div>
         </div>
     )
