@@ -4,7 +4,7 @@ import React from "react";
 
 function Halloweendecor ({handleSpooky, isSpooky}) {
     const now = new Date();
-    const isOctober = now.getMonth() === 6;
+    const isOctober = now.getMonth() === 9;
     return (
         <div>
             {isOctober ? <div className='spooky-button'>
