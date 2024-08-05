@@ -1,0 +1,32 @@
+#label{
+    background-color:honeydew;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 3px solid aquamarine;
+    transition: all 0.6s ease;
+    height: 3vh;
+}
+#label:focus{
+    background-color:rgb(197, 255, 197);
+    scale: 1.03;
+}
+#Score{
+    background-color:honeydew;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 3px solid aquamarine;
+    transition: all 0.6s ease;
+    height: 3vh;
+}
+#Score:focus{
+    background-color:rgb(197, 255, 197);
+    scale: 1.03;
+}
+label{
+    background: linear-gradient(to right, crimson, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: var(--prg-font-size-subheader);
+    gap: 15px;
+}

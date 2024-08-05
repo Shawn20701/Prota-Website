@@ -1,6 +1,9 @@
 .chart-container {
-    width: 50%; /* Adjust as needed */
-    max-width: 600px; /* Maximum width */
-    height: 300px; /* Fixed height or percentage-based */
-    margin: auto; /* Center the chart */
+    width: 75%; 
+    max-width: 600px; 
+    height: 500px; 
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }

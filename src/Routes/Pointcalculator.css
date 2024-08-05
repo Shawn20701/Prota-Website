@@ -26,7 +26,8 @@
     font-size: 16px;
     transition: all 0.6s ease-in-out;
     position: absolute;
-    left: 10vw;
+    left: 7vw;
+    top: 45vh;
 }
 #clrdatabutton:hover{
     scale: 1.1;
@@ -35,10 +36,11 @@
 #submit{
     background-color: aquamarine;
     position: absolute;
-    left: 2vw;
+    left: 7vw;
+    top: 37vh;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 30px;
     transition: all 0.6s ease;
     cursor: pointer;
 }

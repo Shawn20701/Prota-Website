@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './Pointcalcform.css';
 // eslint-disable-next-line react/prop-types
 export default function Pointcalcform({onAddData}){
     const [inputValue, setInputValue] = useState(''); 
@@ -11,6 +11,7 @@ export default function Pointcalcform({onAddData}){
         onAddData(Number(inputValue), label); 
         setInputValue(''); 
         setLabel(''); 
+        console.log('data added :3');
       }
     };
     return (
