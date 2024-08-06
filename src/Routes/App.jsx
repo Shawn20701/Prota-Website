@@ -133,7 +133,7 @@ function App() {
       <br></br>
       <Navbar />
       <h1 className='Page-header' onMouseOver={handlemouseover} onMouseLeave={handlemouseleave}>PR<HiddenButton isSnowman={isSnowman} onToggle={handleToggleSnowman} /><Tree istree={istree} onToggle={handleToggleTree} />A 17222</h1>
-      <div className='fun-fact' style={{opacity: opacitypercent / 100, position:visible}}>Hi :3</div>
+      <div className='fun-fact' style={{opacity: opacitypercent / 100, position:visible}}>PROTA means first in greek</div>
       <br></br>
       <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>
@@ -142,6 +142,6 @@ function App() {
       </div>
       {snowActive && <Snowfall />}
     </div>
-  )
+  );
 }
 export default App
