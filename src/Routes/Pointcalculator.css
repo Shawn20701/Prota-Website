@@ -15,7 +15,7 @@
     color: darkviolet;
     font-size: var(--prg-font-size-content);
 }
-#clrdatabutton{
+.clrdatabutton{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #f44336;
@@ -29,9 +29,12 @@
     left: 7vw;
     top: 45vh;
 }
-#clrdatabutton:hover{
+.clrdatabutton:hover{
     scale: 1.1;
     background-color: #610d07;
+}
+.clrdatabutton.show {
+    background-color: blue;
 }
 #submit{
     background-color: aquamarine;
