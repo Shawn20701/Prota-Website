@@ -5,38 +5,37 @@ import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, LineElement, Title, Tooltip, Legend } from 'chart.js';
 import 'chart.js/auto';
 import './Chartcomponent.css';
-// Register necessary Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, LineElement, Title, Tooltip, Legend);
 
 const ChartComponent = ({ data }) => {
   const chartRef = useRef(null);
 
-  // Chart data configuration
   const chartData = {
-    labels: data.labels || [], // Ensure labels are provided
+    labels: data.labels || [], 
     datasets: [
       {
         label: 'Score',
-        data: data.values || [], // Ensure values are provided
+        data: data.values || [], 
         fill: false,
         borderColor: 'rgba(75, 192, 192, 1)',
         pointBackgroundColor: 'rgba(75, 192, 192, 1)',
         pointBorderColor: '#fff',
         pointBorderWidth: 2,
-        pointRadius: 5, // Set point radius to make points visible
+        pointRadius: 5, 
         tension: 0.1,
       },
     ],
   };
   const barChartData = {
-    labels: data.labels || [], // Ensure labels are provided
+    labels: data.labels || [], 
     datasets: [
       {
         label: 'Score',
-        data: data.values || [], // Ensure values are provided
-        backgroundColor: 'rgba(75, 192, 192, 0.5)', // Color for bars
-        borderColor: 'rgba(75, 192, 192, 1)', // Border color for bars
-        borderWidth: 1, // Border width for bars
+        data: data.values || [], 
+        backgroundColor: 'rgba(75, 192, 192, 0.5)',
+        borderColor: 'rgba(75, 192, 192, 1)', 
+        borderWidth: 1, 
       },
     ],
   };

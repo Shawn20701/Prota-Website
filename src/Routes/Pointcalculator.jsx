@@ -17,11 +17,11 @@ export default function Pointcalculator(){
         }));
       };
       const handleClearData = () => {
-        // Clear chart data state
-        setChartData({ labels: [], values: [] });
-        // Remove chart data from local storage
-        localStorage.removeItem('chartData');
-    };
+        if (window.confirm('Are you sure you want to clear all data?')) {
+          setChartData({ labels: [], values: [] });
+          localStorage.removeItem('chartData');
+        }
+      };
     return (
         <div className='page-container'>
             <h1 id='Page-header'>WELCOME TO THE BETA POINT COUNTER/TRACKER</h1>
