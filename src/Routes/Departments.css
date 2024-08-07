@@ -1,15 +1,29 @@
 :root {
-    --prg-bg-color: aqua;
-    --prg-fg-color: orange;
-    --prg-primary-text-color: maroon;
-    --prg-secondary-text-color: black;
-    --prg-teriary-text-color: white;
-    --prg-link-color: blue;
-    --prg-font-family: 'Franklin Gothic Medium';
+    --prg-bg-color: #00bfae; 
+    --prg-fg-color: #ffde59; 
+    --prg-primary-text-color: #ffffff; 
+    --prg-secondary-text-color: #ff6347; 
+    --prg-teriary-text-color: #000000; 
+    --prg-link-color: #ff4500;
+    --prg-font-family: 'Arial', sans-serif;
     --prg-font-size-title: 5rem;
     --prg-font-size-subheader: 3rem;
     --prg-font-size-content: 2.3rem;
     --prg-font-size-subcontent: 1.25rem;
+    --prg-dark-bg-color: #004d40; 
+    --prg-dark-fg-color: #00695c; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #ff7043; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #ffab91; 
+}
+[data-theme="dark"] {
+    --prg-bg-color: var(--prg-dark-bg-color);
+    --prg-fg-color: var(--prg-dark-fg-color);
+    --prg-primary-text-color: var(--prg-dark-primary-text-color);
+    --prg-secondary-text-color: var(--prg-dark-secondary-text-color);
+    --prg-teriary-text-color: var(--prg-dark-teriary-text-color);
+    --prg-link-color: var(--prg-dark-link-color);
 }
 .title{
     font-size: var(--prg-font-size-title);
@@ -127,13 +141,14 @@
     filter: blur(1.5rem);
     opacity: 0.5;
 }
-#Container{
+#Container {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(to right, var(--prg-bg-color), var(--prg-fg-color));
+    background-color: var(--prg-bg-color);
+    transition: background-color 250ms ease-in-out;
     background-repeat: repeat-y;
     background-size: cover;
     margin: 0;
-    padding:0;
+    padding: 0;
     z-index: 0;
 }

@@ -186,9 +186,5 @@ img {
   cursor: pointer;
 }
 #main-page-img{
-  filter: blur(2px);
   transition: all 0.6s ease-in-out;
-}
-#main-page-img:hover{
-  filter: none;
 }

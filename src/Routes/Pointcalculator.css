@@ -1,6 +1,8 @@
 .page-container{
     background-color: var(--background-color);
     width: 100vw;
+    transition: background-color 250ms ease-in-out;
+    height: 100%;
     min-height: 100vh;
 }
 #Page-header{
@@ -10,6 +12,7 @@
     background: linear-gradient(to right, lightblue, blue);
     background-clip: text;
     -webkit-background-clip: text;
+    margin-top: 0;
 }
 #Explanation{
     color: darkviolet;

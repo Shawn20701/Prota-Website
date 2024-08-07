@@ -1,8 +1,11 @@
 import './Pointcalculator.css';
 import Pointcalcform from '../Components/Pointcalcform';
 import ChartComponent from '../Components/Chartcomponent';
-import { useState, useEffect} from 'react';
+import { useState, useEffect, useContext} from 'react';
+import Toggle from '../Components/Toggle';
+import { Eventcontext } from '../Components/Eventcontext';
 export default function Pointcalculator(){
+  const {isdark} = useContext(Eventcontext)
     const [chartData, setChartData] = useState(() => {
         const savedData = localStorage.getItem('chartData');
         return savedData ? JSON.parse(savedData) : { labels: [], values: [] };
@@ -25,7 +28,8 @@ export default function Pointcalculator(){
         }
       };
     return (
-        <div className='page-container'>
+        <div className='page-container' data-theme={isdark ? "dark" : "light"}>
+            <Toggle />
             <h1 id='Page-header'>WELCOME TO THE BETA POINT COUNTER/TRACKER</h1>
             <h3 id='Explanation'>This is a program designed by PROTA 17222 for FTC teams to be able to log and visualize scores</h3>
             <Pointcalcform onAddData={handleAddData} />

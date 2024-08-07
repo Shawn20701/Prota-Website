@@ -1,14 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import './index.css'
 import './Aboutus.css'
+import { Eventcontext } from "../Components/Eventcontext";
+import Toggle from "../Components/Toggle";
 export default function Aboutus(){
-    const [cursorStyle, setcursorStyle] = useState('default')
+    const [cursorStyle, setcursorStyle] = useState('default');
+    const {isdark} = useContext(Eventcontext)
     const changeCursor = () => {
         setcursorStyle(prevStyle => prevStyle === 'default' ? 'custom' : 'default');
     };
     return (
-        <div className={`About-Us-Container ${cursorStyle}`}> 
+        <div className={`About-Us-Container ${cursorStyle}`} data-theme={isdark ? "dark" : "light"}>
+            <Toggle /> 
             <h1 className='page-header'>We are team PROTA 172<button id='secretbutton'onClick={() => changeCursor()}>2</button>2</h1>
             <h2 id='page-subheader'>We are a First Tech Challenge team formed in 2019 we have since competed in various events</h2>
             <h3 className='list-container'>Events Competed in</h3>

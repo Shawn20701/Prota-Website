@@ -1,5 +1,5 @@
 import './index.css'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import teamphoto from '../assets/Team-Photo.JPG'
 import hishavenphoto from '../assets/His-Haven-Photo.jpg'
 import { Snowfall } from 'react-snowfall'
@@ -11,6 +11,7 @@ import Halloweendecor from '../Components/Halloween'
 import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
 import Subheader from '../Components/subheader'
+import { Eventcontext } from '../Components/Eventcontext'
 const contentMap = {
   1: (
     <>
@@ -73,13 +74,13 @@ function App() {
   const [visible, setvisibility] = useState('absolute')
   const [hidden, sethidden] = useState(1)
   const [istransitioning, setistransitioning] = useState(false)
-  const [isdark, setisdark] = useState(false)
   const [snowActive, setSnowActive] = useState(false); 
   const [isSnowman, setIsSnowman] = useState(false);
   const [istree, setistree] = useState(false);
   const [isSpooky, setisSpooky] = useState(false);
   const [randomnumber, setrandomnumber] = useState(0);
   const [previousNumber, setPreviousNumber] = useState(null);
+  const {isdark} = useContext(Eventcontext);
   const handlemouseover = () =>{
     setopacitypercent(100)
     setvisibility('static')
@@ -121,10 +122,7 @@ function App() {
   return (
       <div className='App' data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
         <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'}/>
-        <Toggle 
-        isChecked={isdark} 
-        handleChange={() => setisdark(!isdark)} 
-      />
+        <Toggle />
       <Halloweendecor 
       isSpooky={isSpooky}
       handleSpooky={() => handlespookymode()}

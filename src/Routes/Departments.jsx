@@ -2,9 +2,14 @@ import  './Departments.css'
 import Github from '../assets/Github.svg'
 import Java from '../assets/Java.svg'
 import React from '../assets/React.svg'
+import { useContext } from 'react'
+import { Eventcontext } from '../Components/Eventcontext'
+import Toggle from '../Components/Toggle'
 export default function Departments(){
+    const {isdark} = useContext(Eventcontext);
     return (
-        <div id='Container'>
+        <div id='Container' data-theme={isdark ? "dark" : "light"}>
+            <Toggle />
             <div className='programming-container'>
                 <div className='title-container'>
                     <h1 className='title'>Programming</h1>
