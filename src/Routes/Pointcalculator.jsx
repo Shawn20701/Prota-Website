@@ -5,7 +5,7 @@ import { useState, useEffect, useContext} from 'react';
 import Toggle from '../Components/Toggle';
 import { Eventcontext } from '../Components/Eventcontext';
 export default function Pointcalculator(){
-  const {isdark} = useContext(Eventcontext)
+  const {isdark} = useContext(Eventcontext);
     const [chartData, setChartData] = useState(() => {
         const savedData = localStorage.getItem('chartData');
         return savedData ? JSON.parse(savedData) : { labels: [], values: [] };
@@ -25,6 +25,8 @@ export default function Pointcalculator(){
           setChartData({ labels: [], values: [] });
           localStorage.removeItem('chartData');
           setisPressed(!isPressed);
+          window.confirm("Data deleted...");
+          console.log("data deleted");
         }
       };
     return (

@@ -64,6 +64,7 @@ const ChartComponent = ({ data }) => {
       },
       title: {
         display: true,
+        color: 'rgba(255, 87, 34, 1)',
         text: 'Scores',
       },
     },
@@ -73,7 +74,7 @@ const ChartComponent = ({ data }) => {
           display: false, 
         },
         ticks: {
-          color: '#333', 
+          color: 'rgba(255, 87, 34, 1)', 
         },
       },
       y: {
@@ -81,7 +82,7 @@ const ChartComponent = ({ data }) => {
           color: '#ddd', 
         },
         ticks: {
-          color: '#333', 
+          color: 'rgba(255, 87, 34, 1)', 
         },
       },
     },

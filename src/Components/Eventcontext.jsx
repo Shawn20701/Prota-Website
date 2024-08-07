@@ -4,10 +4,14 @@ import { createContext, useState } from 'react';
 export const Eventcontext = createContext();
 
 export const EventProvider = ({ children }) => {
-  const [isdark, setIsdark] = useState(false);
-
+  const [isdark, setIsdark] = useState(() => {
+    const savedMode = localStorage.getItem('isdark');
+    return savedMode === 'true'; 
+  });
   const toggleDarkMode = () => {
-    setIsdark(prev => !prev);
+    const newMode = !isdark;
+    setIsdark(newMode);
+    localStorage.setItem('isdark', newMode); 
   };
 
   return (

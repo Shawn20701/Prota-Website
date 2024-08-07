@@ -7,3 +7,7 @@
     justify-content: center;
     gap: 50px;
 }
+canvas {
+    border: 3px solid var(--prg-link-color);
+    border-radius: 5px; 
+  }

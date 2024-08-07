@@ -1,5 +1,28 @@
+:root {
+    --pc-bg-color: #ffebee; 
+    --pc-fg-color: #ff7043; 
+    --pc-primary-text-color: #4e342e; 
+    --pc-secondary-text-color: #f57c00; 
+    --pc-teriary-text-color: #6d4c41; 
+    --pc-link-color: #d84315; 
+    --pc-dark-bg-color: #4e342e; 
+    --pc-dark-fg-color: #6d4c41; 
+    --pc-dark-primary-text-color: #ffffff; 
+    --pc-dark-secondary-text-color: #ff5722; 
+    --pc-dark-teriary-text-color: #d7ccc8; 
+    --pc-dark-link-color: #ffab91; 
+}
+
+[data-theme="dark"] {
+    --pc-bg-color: var(--pc-dark-bg-color);
+    --pc-fg-color: var(--pc-dark-fg-color);
+    --pc-primary-text-color: var(--pc-dark-primary-text-color);
+    --pc-secondary-text-color: var(--pc-dark-secondary-text-color);
+    --pc-teriary-text-color: var(--pc-dark-teriary-text-color);
+    --pc-link-color: var(--pc-dark-link-color);
+}
 .page-container{
-    background-color: var(--background-color);
+    background-color: var(--pc-bg-color);
     width: 100vw;
     transition: background-color 250ms ease-in-out;
     height: 100%;
