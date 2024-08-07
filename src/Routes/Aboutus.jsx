@@ -6,7 +6,7 @@ import { Eventcontext } from "../Components/Eventcontext";
 import Toggle from "../Components/Toggle";
 export default function Aboutus(){
     const [cursorStyle, setcursorStyle] = useState('default');
-    const {isdark} = useContext(Eventcontext)
+    const {isdark} = useContext(Eventcontext);
     const changeCursor = () => {
         setcursorStyle(prevStyle => prevStyle === 'default' ? 'custom' : 'default');
     };

@@ -90,8 +90,8 @@ const ChartComponent = ({ data }) => {
 
   return (
     <div className="chart-container">
-            <Line ref={chartRef} data={chartData} options={options} />
-            <Bar ref={chartRef} data={barChartData} options={options} />
+            <Line className='chart'ref={chartRef} data={chartData} options={options} />
+            <Bar className='chart'ref={chartRef} data={barChartData} options={options} />
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const Navbar = () => {
                 <a className='navbar-button' href='/About-us'>About Us</a>
                 <a className='navbar-button' href='#'>Socials</a>
                 <a className='navbar-button' href='#'>Media</a>
-                <a className='navbar-button' href='#'>Events</a>
+                <a className='navbar-button' href='/Calendar'>Calendar</a>
             </div>
         </>
     );
