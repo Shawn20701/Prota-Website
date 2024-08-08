@@ -26,7 +26,6 @@ export default function Pointcalculator(){
           setChartData({ labels: [], values: [] });
           localStorage.removeItem('chartData');
           setisPressed(!isPressed);
-          window.confirm("Data deleted...");
           console.log("data deleted");
         }
       };

@@ -2,13 +2,21 @@ import  './Departments.css'
 import Github from '../assets/Github.svg'
 import Java from '../assets/Java.svg'
 import React from '../assets/React.svg'
-import { useContext } from 'react'
+import { useContext} from 'react'
 import { Eventcontext } from '../Components/Eventcontext'
 import Toggle from '../Components/Toggle'
+import '../css/event-themes.css'
 export default function Departments(){
     const {isdark} = useContext(Eventcontext);
+    const month = new Date().getMonth();
+    const themes = [
+      "winter-theme", "winter-spring-theme", "spring-theme", "spring-theme",
+      "spring-theme", "spring-summer-theme", "summer-theme", "summer-theme",
+      "summer-fall-theme", "fall-theme", "fall-winter-theme", "winter-theme"
+    ];
+    const currentTheme = themes[month];
     return (
-        <div id='Container' data-theme={isdark ? "dark" : "light"}>
+        <div id='Container'className={`Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
             <Toggle />
             <div className='programming-container'>
                 <div className='title-container'>
@@ -29,6 +37,8 @@ export default function Departments(){
                     <p id='Java-img-text' className='sub-text'>Java is a high level object oriented language we use to code our robot</p>
                     <p id='React-img-text' className='sub-text'>React is a javascript library that is used to make web applications we used this to develop our website</p>
                 </div>
+                <p className='subheader-prg'>Resources and Projects</p>
+                <a href='/betas/Pointcalculator' className='Programming-link'>Point Calculator/Tracker</a>
                 <div className='title-container'>
                     <h1 className='title'>3D-Design</h1>
                 </div>

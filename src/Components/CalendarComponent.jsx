@@ -8,8 +8,7 @@ export default function Calendar() {
     <FullCalendar
       plugins={[ dayGridPlugin]}
       events={[
-        { title: 'Robotics Competition', date: '2024-10-06' },
-        { title: 'Robotics Meet', date: '2024-10-07' }
+        { title: 'Season Kick off', date: '2024-09-07' }
       ]}
     />
     </div>

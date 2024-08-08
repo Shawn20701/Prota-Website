@@ -134,3 +134,123 @@
     --tertiary-text-color: #ff6347; /* Tomato */
     --link-color: #ff8c00; /* Dark orange */
 }
+/* Winter Theme */
+.winter-theme {
+    --prg-bg-color: #e0f7fa; 
+    --prg-fg-color: #b3e5fc; 
+    --prg-primary-text-color: #ffffff; 
+    --prg-secondary-text-color: #0288d1; 
+    --prg-teriary-text-color: #01579b; 
+    --prg-link-color: #03a9f4; 
+    --prg-dark-bg-color: #004d40; 
+    --prg-dark-fg-color: #00251a; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #00332e; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #0288d1; 
+}
+/* Winter-Spring Theme */
+.winter-spring-theme {
+    --prg-bg-color: #e0f2f1; 
+    --prg-fg-color: #b2dfdb; 
+    --prg-primary-text-color: #ffffff; 
+    --prg-secondary-text-color: #004d40; 
+    --prg-teriary-text-color: #00796b; 
+    --prg-link-color: #009688; 
+    --prg-dark-bg-color: #004d40; 
+    --prg-dark-fg-color: #00251a; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #00796b; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #009688; 
+}
+/* Spring Theme */
+.spring-theme {
+    --prg-bg-color: #f1f8e9; 
+    --prg-fg-color: #dcedc8; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #8bc34a; 
+    --prg-teriary-text-color: #689f38; 
+    --prg-link-color: #7cb342; 
+    --prg-dark-bg-color: #2c6b2f; 
+    --prg-dark-fg-color: #1b5e20; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #4caf50; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #7cb342; 
+}
+/* Spring-Summer Theme */
+.spring-summer-theme {
+    --prg-bg-color: #fffde7; 
+    --prg-fg-color: #fff9c4; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #fbc02d; 
+    --prg-teriary-text-color: #f9a825; 
+    --prg-link-color: #d37014; 
+    --prg-dark-bg-color: #f57f17; 
+    --prg-dark-fg-color: #fbc02d; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #553605; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #f8c82c; 
+}
+/* Summer Theme */
+.summer-theme {
+    --prg-bg-color: #ffeb3b; 
+    --prg-fg-color: #ffe082; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #ff9800; 
+    --prg-teriary-text-color: #f57c00; 
+    --prg-link-color: #ff5722; 
+    --prg-dark-bg-color: #e65100; 
+    --prg-dark-fg-color: #bf360c; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #ff9800; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #bf360c; 
+}
+/* Summer-Fall Theme */
+.summer-fall-theme {
+    --prg-bg-color: #ffcc80; 
+    --prg-fg-color: #ffb74d; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #ff7043; 
+    --prg-teriary-text-color: #bf360c; 
+    --prg-link-color: #ff5722; 
+    --prg-dark-bg-color: #bf360c; 
+    --prg-dark-fg-color: #d84315; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #ff7043; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #ff5722; 
+}
+/* Fall Theme */
+.fall-theme {
+    --prg-bg-color: #ffab91; 
+    --prg-fg-color: #ff8a65; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #d84315; 
+    --prg-teriary-text-color: #bf360c; 
+    --prg-link-color: #ff6f61; 
+    --prg-dark-bg-color: #bf360c; 
+    --prg-dark-fg-color: #d84315; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #ff7043; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #ff6f61; 
+}
+/* Fall-Winter Theme */
+.fall-winter-theme {
+    --prg-bg-color: #ffccbc; 
+    --prg-fg-color: #ffab91; 
+    --prg-primary-text-color: #000000; 
+    --prg-secondary-text-color: #d84315; 
+    --prg-teriary-text-color: #bf360c; 
+    --prg-link-color: #ff7043; 
+    --prg-dark-bg-color: #bf360c; 
+    --prg-dark-fg-color: #d84315; 
+    --prg-dark-primary-text-color: #ffffff; 
+    --prg-dark-secondary-text-color: #ff7043; 
+    --prg-dark-teriary-text-color: #e0e0e0; 
+    --prg-dark-link-color: #ff6f61; 
+}
