@@ -6,6 +6,7 @@ import Aboutus from './Routes/Aboutus.jsx'
 import Departments from './Routes/Departments.jsx'
 import Pointcalculator from './Routes/Pointcalculator.jsx'
 import { EventProvider } from './Components/Eventcontext.jsx'
+import Calendar from './Routes/Calendar.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: "/betas/Pointcalculator",
     element: <Pointcalculator />
+  },
+  {
+    path: "/Calendar",
+    element: <Calendar />
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
