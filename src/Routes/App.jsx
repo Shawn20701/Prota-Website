@@ -12,7 +12,6 @@ import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
 import Subheader from '../Components/subheader'
 import { Eventcontext } from '../Components/Eventcontext'
-import useWindowSize from 'react-use/lib/useWindowSize';
 const contentMap = {
   1: (
     <>
@@ -120,7 +119,6 @@ function App() {
     const newNumber = getRandomInteger(1,5);
     setrandomnumber(newNumber);
   }
-  const { width, height } = useWindowSize();
   return (
       <div className='App' data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
         <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'}/>
@@ -140,7 +138,7 @@ function App() {
       <div className='images-main-page'>
         <img id='main-page-img'className={`image-transition ${istransitioning ? 'istransitioning' : ''}`}src={(imageMap[hidden])}></img>
       </div>
-      {snowActive && <Snowfall width={width} height={height}/>}
+      {snowActive && <Snowfall snowflakeCount="450" style={{position: 'fixed',width: '100vw',height: '100vh'}}/>}
     </div>
   );
 }
