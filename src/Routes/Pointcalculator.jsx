@@ -7,10 +7,21 @@ import { Eventcontext } from '../Components/Eventcontext';
 import Hidden from '../Components/Hidden';
 export default function Pointcalculator(){
   const {isdark} = useContext(Eventcontext);
+  const [totalgraph, settotalgraph] = useState(() => {
+    const savedgraphtimes = localStorage.getItem('TimesGraphed');
+    return savedgraphtimes ? JSON.parse(savedgraphtimes) : 0;
+  });
+  const [secretTheme, setsecretTheme] = useState(false);
     const [chartData, setChartData] = useState(() => {
         const savedData = localStorage.getItem('chartData');
         return savedData ? JSON.parse(savedData) : { labels: [], values: [] };
     });
+    useEffect(() => {
+      if (totalgraph >= 13) {
+        console.log('Congrats you achieved 13 Points Graphed at one time :P');
+        setsecretTheme(true);
+      }
+    }, [totalgraph]);
     const [isPressed, setisPressed] = useState(false);
     useEffect(() => {
         localStorage.setItem('chartData', JSON.stringify(chartData));
@@ -20,13 +31,21 @@ export default function Pointcalculator(){
             labels: [...prevData.labels, label],
             values: [...prevData.values, value],
         }));
-      };
+        settotalgraph((prevTotalGraph) => {
+          const newTotalGraph = prevTotalGraph + 1;
+          localStorage.setItem('TimesGraphed', JSON.stringify(newTotalGraph));
+          console.log('Points Graphed: ' + newTotalGraph + ' ' + ':P')
+          return newTotalGraph;
+        });
+      }
       const handleClearData = () => {
         if (window.confirm('Are you sure you want to clear all data?')) {
           setChartData({ labels: [], values: [] });
           localStorage.removeItem('chartData');
           setisPressed(!isPressed);
           console.log("data deleted");
+          localStorage.removeItem('TimesGraphed');
+          settotalgraph(0);
         }
       };
       const [istoggled, setistoggled] = useState(() => {
@@ -37,10 +56,13 @@ export default function Pointcalculator(){
         const newMode = !istoggled;
         setistoggled(newMode);
         localStorage.setItem('istoggled', newMode); 
-        console.log(istoggled);
+      };
+      const toggleSecretTheme = () => {
+        const newMode = !secretTheme;
+        setsecretTheme(newMode);
       };
     return (
-        <div className='page-container' data-theme={isdark ? "dark" : "light"} data-secret={istoggled ? "toggled" : ""}>
+        <div className='page-container' data-secrettheme={secretTheme ? "true" : "false"} data-theme={isdark ? "dark" : "light"} data-secret={istoggled ? "toggled" : ""}>
             <Toggle />
             <div id='Page-header-container'>
               <h1 id='Page-header'>WELCOME TO THE BETA <Hidden istoggled={istoggled} toggleSecret={toggleSecret}/>OINT COUNTER/TRACKER</h1>
@@ -49,6 +71,9 @@ export default function Pointcalculator(){
             <Pointcalcform onAddData={handleAddData} />
             <button onClick={handleClearData} className={`clrdatabutton ${isPressed ? "show" : ""}`} id='clrdatabutton'>Clear ALL Data</button>
             <ChartComponent data={chartData} />
+            {totalgraph >= 13 && (
+        <button onClick={toggleSecretTheme} className='toggle-theme-button'> Toggle Secret Theme </button>
+      )}
         </div>
     )
 }
