@@ -16,12 +16,19 @@ export default function Pointcalculator(){
         const savedData = localStorage.getItem('chartData');
         return savedData ? JSON.parse(savedData) : { labels: [], values: [] };
     });
+    const [timesdeleted, settimesdeleted] = useState(() => {
+      const savedtimesdeleted = localStorage.getItem('TimesDeleted');
+      return savedtimesdeleted ? JSON.parse(savedtimesdeleted) : 0;
+    })
     useEffect(() => {
       if (totalgraph >= 13) {
         console.log('Congrats you achieved 13 Points Graphed at one time :P');
         setsecretTheme(true);
       }
-    }, [totalgraph]);
+      if (timesdeleted > 3 && timesdeleted < 5){
+        console.log("you have officially achieved 4 deletes, congrats :P ");
+      }
+    }, [totalgraph, timesdeleted]);
     const [isPressed, setisPressed] = useState(false);
     useEffect(() => {
         localStorage.setItem('chartData', JSON.stringify(chartData));
@@ -46,6 +53,12 @@ export default function Pointcalculator(){
           console.log("data deleted");
           localStorage.removeItem('TimesGraphed');
           settotalgraph(0);
+          settimesdeleted((prevTotalDeleted) => {
+            const newTotalDeleted = prevTotalDeleted + 1;
+            localStorage.setItem('TimesDeleted', JSON.stringify(newTotalDeleted));
+            console.log('Times Data has been deleted: ' + newTotalDeleted + " Times :(");
+            return newTotalDeleted;
+          })
         }
       };
       const [istoggled, setistoggled] = useState(() => {
