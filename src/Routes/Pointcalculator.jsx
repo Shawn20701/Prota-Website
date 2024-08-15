@@ -5,6 +5,8 @@ import { useState, useEffect, useContext} from 'react';
 import Toggle from '../Components/Toggle';
 import { Eventcontext } from '../Components/Eventcontext';
 import Hidden from '../Components/Hidden';
+import Confetti from 'react-confetti';
+import useWindowSize from 'react-use/lib/useWindowSize';
 export default function Pointcalculator(){
   const {isdark} = useContext(Eventcontext);
   const [totalgraph, settotalgraph] = useState(() => {
@@ -16,6 +18,20 @@ export default function Pointcalculator(){
         const savedData = localStorage.getItem('chartData');
         return savedData ? JSON.parse(savedData) : { labels: [], values: [] };
     });
+    const [confetti, setconfetti] = useState(false);
+    const date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let currentDate = `${month}-${day}`;
+    useEffect(() => {
+      const birthdays = ["1-24", "8-15", ""];
+      for (let i = 0; i < birthdays.length; i++) {
+        if (birthdays[i] === currentDate) {
+          console.log('Happy Birthday :P');
+          setconfetti(true);
+        }
+      }
+    }, [currentDate]);
     const [timesdeleted, settimesdeleted] = useState(() => {
       const savedtimesdeleted = localStorage.getItem('TimesDeleted');
       return savedtimesdeleted ? JSON.parse(savedtimesdeleted) : 0;
@@ -74,6 +90,7 @@ export default function Pointcalculator(){
         const newMode = !secretTheme;
         setsecretTheme(newMode);
       };
+      const { width, height } = useWindowSize();
     return (
         <div className='page-container' data-secrettheme={secretTheme ? "true" : "false"} data-theme={isdark ? "dark" : "light"} data-secret={istoggled ? "toggled" : ""}>
             <Toggle />
@@ -87,6 +104,7 @@ export default function Pointcalculator(){
             {totalgraph >= 13 && (
         <button onClick={toggleSecretTheme} className='toggle-theme-button'> Toggle Secret Theme </button>
       )}
+          {confetti ? <Confetti width={width} height={height}/> : null}
         </div>
     )
 }
