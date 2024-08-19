@@ -1,16 +1,20 @@
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'  
-import './CalendarComponent.css';
-export default function Calendar() {
+import FullCalendar from '@fullcalendar/react';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
 
+const CalendarApp = () => {
+  const googleCalendarApiKey =  import.meta.env.VITE_GOOGLE_CALENDAR_API_KEY;
   return (
-    <div className='calendar-container'>
+    <div>
     <FullCalendar
-      plugins={[ dayGridPlugin]}
-      events={[
-        { title: 'Season Kick off', date: '2024-09-07' }
-      ]}
+      plugins={[dayGridPlugin, googleCalendarPlugin]}
+      googleCalendarApiKey={googleCalendarApiKey}  
+      events={{
+        googleCalendarId: 'cf24533a5a742a776862c66fe6eedfd1ccb9bcbdee195a6c82ec3367fd2cbc2d@group.calendar.google.com', 
+      }}
     />
     </div>
-  )
-}
+  );
+};
+
+export default CalendarApp;
