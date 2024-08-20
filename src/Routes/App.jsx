@@ -136,7 +136,7 @@ function App() {
       <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>
       <div className='images-main-page'>
-        <img id='main-page-img'className={`image-transition ${istransitioning ? 'istransitioning' : ''}`}src={(imageMap[hidden])}></img>
+        <img id='main-page-img'className={`image-transition ${istransitioning ? 'istransitioning' : ''}`}src={(imageMap[hidden])} alt='Picture of our team at various events and gatherings'></img>
       </div>
       {snowActive && <Snowfall snowflakeCount="450" style={{position: 'fixed',width: '100vw',height: '100vh'}}/>}
     </div>
