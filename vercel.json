@@ -1,9 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/Aboutus", "dest": "/about-us" },
+      { "src": "//about-us/Departments", "dest": "/" }
     ]
   }
   
