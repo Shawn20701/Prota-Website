@@ -101,9 +101,9 @@
     cursor: pointer;
     font-size: 16px;
     transition: all 0.6s ease-in-out;
-    position: absolute;
-    left: 7%;
-    top: 45%;
+    position: fixed;
+    left: 50%;
+    bottom: 2%;
 }
 @media (max-width: 600px){
     .clrdatabutton{font-size: 1rem; position: fixed; bottom: 10%; left: 30%;}
@@ -117,9 +117,9 @@
 }
 #submit{
     background-color: aquamarine;
-    position: absolute;
-    left: 7%;
-    top: 37%;
+    position: fixed;
+    left: 40%;
+    bottom: 2%;
     border: none;
     border-radius: 5px;
     font-size: 1.667rem;
@@ -134,9 +134,9 @@
 .toggle-theme-button{
     background-color: var(--pc-fg-color);
     color: var(--pc-teriary-text-color);
-    position: absolute;
-    left: 1%;
-    top: 55%;
+    position: fixed;
+    left: 30%;
+    bottom: 2%;
     border: none;
     border-radius: 5px;
     font-size: 1.667rem;
