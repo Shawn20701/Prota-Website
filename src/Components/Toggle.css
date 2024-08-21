@@ -4,6 +4,12 @@
     right: 2em;
     z-index: 3;
 }
+@media (max-width: 600px){
+    .toggle-container{
+        position: relative;
+        right: 0;
+        }
+}
 .toggle{
     opacity: 0;
 }

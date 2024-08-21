@@ -12,10 +12,13 @@ html, body {
   flex-direction: column;
   margin-left: 10vw;
 }
+@media (max-width: 600px){
+  .App{margin-left: 0; margin-top: 5vh;}
+}
 .Page-header {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 5vw;
+  font-size: 3rem;
   color: var(--primary-text-color);
   scale: 1;
   transition: all 0.6s ease-in-out;
@@ -40,13 +43,13 @@ html, body {
   color: var(--primary-text-color);
   transition: all 0.6s ease-in-out;
   transition-delay: 0.3s;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 p {
   color: var(--primary-text-color);
   text-align: center;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 .Content-1 {
@@ -60,7 +63,7 @@ p {
   display: flex;
   gap: 30px;
   border-bottom: 3px solid gray;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 
 @keyframes fade-in {
@@ -133,7 +136,7 @@ img {
   text-decoration: none;
   border: none;
   background: none;
-  font-size: 5vw;
+  font-size: 3rem;
   cursor: pointer;
   padding: 0;
   margin: 0;

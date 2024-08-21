@@ -13,6 +13,16 @@
     z-index: 1000; 
     overflow-y: auto;
 }
+
+@media (max-width: 600px) {
+    .navbar-container {
+        width: 100vw; 
+        height: 5vh; 
+        flex-direction: row;
+        background: var(--foreground-color);
+        gap: 1em; 
+    }
+}
 .navbar-button {
     color: var(--foreground-text-color);
     border-radius: 5px;
@@ -24,13 +34,15 @@
     cursor: pointer; 
     transition: all 0.6s ease-in-out;
 }
-.navbar-button:hover{
-    outline: 2px solid var(--link-color);
-    outline-offset: 2px;
-    scale: 1.03;
-    transition: all 0.6s ease-in-out;
+@media (max-width: 600px) {
+    .navbar-button {
+        font-size: 1rem; 
+    }
 }
 
-
-
-
+.navbar-button:hover {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+    transform: scale(1.03); 
+    transition: all 0.6s ease-in-out;
+}
