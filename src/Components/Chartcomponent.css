@@ -7,6 +7,9 @@
     justify-content: center;
     gap: 50px;
 }
+@media (max-width: 600px){
+    .chart-container{flex-direction: column;}
+}
 .chart{
     border: 3px solid var(--prg-link-color);
     border-radius: 5px; 

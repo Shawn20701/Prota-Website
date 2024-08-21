@@ -5,6 +5,9 @@
     background-color: var(--background-color);
     transition: background-color 250ms ease-in-out;
 }
+@media (max-width: 600px){
+    .About-Us-Container{overflow-x: hidden;}
+}
 .page-header {
     font-family: Impact;
     font-size: 5rem;
@@ -16,10 +19,16 @@
     background-clip: text;
     margin-top: 0;
 }
+@media (max-width: 600px){
+    .page-header{font-size: 3rem; margin-top: 5vh;}
+}
 #page-subheader {
     font-family: Impact;
     font-size: 3rem;
     color: var(--primary-text-color);
+}
+@media (max-width: 600px){
+    #page-subheader{font-size: 2rem}
 }
 .list-container {
     font-family: Impact;
@@ -27,12 +36,18 @@
     color: var(--primary-text-color);
     text-align: center;
 }
+@media (max-width: 600px){
+    .list-container{font-size: 3rem}
+}
 .list {
     display: flex;
     flex-direction: row;
     gap: 3rem;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 600px){
+    .list{flex-direction: column;}
 }
 .item {
     list-style-type: none;
@@ -45,6 +60,9 @@
 .item:hover{
     transform: translateY(1.5rem) scale(1.2);
     color: var(--tertiary-text-color);
+}
+@media (max-width: 600px){
+    .item{font-size: 3rem;}
 }
 .space {
     height: 5vh;
@@ -69,6 +87,13 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+.mobile-replace-button{
+    display: none;
+}
+@media (max-width: 600px){
+    #secretbutton{display: none;}
+    .mobile-replace-button{display: inline-block; font-size: 3rem;}
+}
 #Department-Button{
     border-radius: 0.75rem;
     border: 0.3rem solid var(--prg-fg-color);
@@ -77,8 +102,14 @@
     scale: 2.25;
     transition: all 0.6s ease-in-out;
 }
+@media (max-width: 600px){
+    #Department-Button{scale: 1.5}
+}
 #Department-Button:hover{
     scale: 3;
     transform: translateY(-0.25rem);
     transition: all 0.6s ease-in-out;
+}
+@media (max-width: 600px){
+    #Department-Button:hover{scale: 2}
 }

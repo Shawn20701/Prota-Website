@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column; 
     align-items: center; 
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 #Calendar-dark-toggle{
     margin-bottom: 100px;
@@ -11,8 +13,15 @@
 #Calendar{
     margin-top: 20px;
     width: 100%;
+    margin-bottom: 5vh;
 }
 .calendar-header{
     color: var(--primary-text-color);
     font-size: var(--prg-font-size-title);
+}
+@media (max-width: 600px){
+    .calendar-header{font-size: 3rem}
+}
+@media (max-width: 600px){
+    #Calendar-dark-toggle{margin-bottom: 10px;}
 }

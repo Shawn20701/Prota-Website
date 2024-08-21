@@ -30,7 +30,7 @@
     font-size: 12px; 
 }
 .fc-daygrid-day-number {
-    color: #007bff; 
+    color: #007bff !important; 
     font-weight: bold; 
 }
 .fc-toolbar-title {

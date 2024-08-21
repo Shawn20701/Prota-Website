@@ -13,6 +13,9 @@
     box-shadow: none;
     font-family: var(--font-main);
 }
+@media (max-width: 600px){
+    .hidden{font-size: 2rem}
+}
 #Page-header-container {
     display: flex;
     justify-content: center;
