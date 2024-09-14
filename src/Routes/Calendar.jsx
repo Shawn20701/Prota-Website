@@ -4,13 +4,11 @@ import Toggle from '../Components/Toggle';
 import { Eventcontext } from '../Components/Eventcontext';
 import { useContext } from 'react';
 import Pageheader from '../Components/Page-header';
-import Navbar from '../Components/Navbar';
 export default function Calendar(){
     const {isdark} = useContext(Eventcontext);
     return (
         <>
             <div className='Calendar-container' data-theme={isdark ? "dark" : "light"}>
-                <Navbar className="navbar-mobile" />
                 <Pageheader />
                 <div id='Calendar-dark-toggle'>
                     <Toggle />
