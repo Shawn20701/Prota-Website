@@ -7,6 +7,7 @@ export const Navbar = () => {
                 <a className='navbar-button' href='/About-us'>About Us</a>
                 <a className='navbar-button' href='#'>Media</a>
                 <a className='navbar-button' href='/Calendar'>Calendar</a>
+                <a className='navbar-button' href='/About-us/Departments'>Departments</a>
             </div>
         </>
     );

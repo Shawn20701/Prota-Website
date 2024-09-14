@@ -15,6 +15,12 @@ html, body {
 @media (max-width: 600px){
   .App{margin-left: 0; margin-top: 5vh;}
 }
+.mobile-navbar{
+  display: none;
+}
+@media (max-width: 600px){
+  .mobile-navbar{display: inline-block; font-size: 3rem;}
+}
 .Page-header {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -79,11 +85,24 @@ p {
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
-
-.main-page-sel:hover {
+.main-page-sel{
+  border-radius: 5px;
+  font-size: 2rem;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  border: none;
+  transition: background-color 250ms ease-in-out;
+  cursor: pointer;
+}
+.main-page-sel:focus {
   scale: 1.2;
   transition: all 0.3s ease-in-out;
   color: var(--tertiary-text-color);
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 250ms ease-in-out;
+  border: none;
+  cursor: pointer;
 }
 .toggle-event {
   opacity: 0;

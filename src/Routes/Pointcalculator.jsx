@@ -7,6 +7,7 @@ import { Eventcontext } from '../Components/Eventcontext';
 import Hidden from '../Components/Hidden';
 import Confetti from 'react-confetti';
 import useWindowSize from 'react-use/lib/useWindowSize';
+import Pageheader from '../Components/Page-header';
 export default function Pointcalculator(){
   const {isdark} = useContext(Eventcontext);
   const [totalgraph, settotalgraph] = useState(() => {
@@ -94,6 +95,7 @@ export default function Pointcalculator(){
     return (
         <div className='page-container' data-secrettheme={secretTheme ? "true" : "false"} data-theme={isdark ? "dark" : "light"} data-secret={istoggled ? "toggled" : ""}>
             <Toggle />
+            <Pageheader />
             <div id='Page-header-container'>
               <h1 id='Page-header'>WELCOME TO THE BETA <Hidden istoggled={istoggled} toggleSecret={toggleSecret}/>OINT COUNTER/TRACKER</h1>
             </div>

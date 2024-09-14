@@ -25,6 +25,12 @@
     --prg-teriary-text-color: var(--prg-dark-teriary-text-color);
     --prg-link-color: var(--prg-dark-link-color);
 }
+#Container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
 .title{
     font-size: var(--prg-font-size-title);
     font-family: var(--prg-font-family);

@@ -1,0 +1,29 @@
+.santa-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100px; 
+    height: auto; 
+    transition: opacity 0.3s ease; 
+    z-index: -1;
+    overflow-x: hidden;
+  }
+  
+  .santa-image.inactive {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    z-index: -1; 
+  }
+  
+  .santa-image.active {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    z-index: -1;
+  }
+  .Page-header{
+    margin-top: 0;
+    padding-top: 1em;
+    overflow-x: 0;
+  }

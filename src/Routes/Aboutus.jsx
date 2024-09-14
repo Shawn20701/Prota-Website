@@ -4,6 +4,8 @@ import './index.css'
 import './Aboutus.css'
 import { Eventcontext } from "../Components/Eventcontext";
 import Toggle from "../Components/Toggle";
+import Pageheader from '../Components/Page-header'
+import Navbar from "../Components/Navbar";
 export default function Aboutus(){
     const [cursorStyle, setcursorStyle] = useState('default');
     const {isdark} = useContext(Eventcontext);
@@ -12,7 +14,9 @@ export default function Aboutus(){
     };
     return (
         <div className={`About-Us-Container ${cursorStyle}`} data-theme={isdark ? "dark" : "light"}>
+            <Navbar className="navbar-mobile" />
             <Toggle /> 
+            <Pageheader />
             <h1 className='page-header'>We are team PROTA 172<h1 className='mobile-replace-button'>2</h1><button id='secretbutton'onClick={() => changeCursor()}>2</button>2</h1>
             <h2 id='page-subheader'>We are a First Tech Challenge team formed in 2019 we have since competed in various events</h2>
             <h3 className='list-container'>Events Competed in</h3>

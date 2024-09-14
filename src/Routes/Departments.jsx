@@ -6,6 +6,8 @@ import { useContext} from 'react'
 import { Eventcontext } from '../Components/Eventcontext'
 import Toggle from '../Components/Toggle'
 import '../css/event-themes.css'
+import Pageheader from '../Components/Page-header'
+import './index.css'
 export default function Departments(){
     const {isdark} = useContext(Eventcontext);
     const month = new Date().getMonth();
@@ -17,7 +19,9 @@ export default function Departments(){
     const currentTheme = themes[month];
     return (
         <div id='Container'className={`Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
+            
             <Toggle />
+            <Pageheader />
             <div className='programming-container'>
                 <div className='title-container'>
                     <h1 className='title'>Programming</h1>

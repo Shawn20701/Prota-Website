@@ -2,16 +2,13 @@ import './index.css'
 import { useState, useContext } from 'react'
 import teamphoto from '../assets/Team-Photo.JPG'
 import hishavenphoto from '../assets/His-Haven-Photo.jpg'
-import { Snowfall } from 'react-snowfall'
 import {Toggle} from '../Components/Toggle'
-import HiddenButton from '../Components/HiddenButton'
-import Tree from '../Components/Tree'
-import santa from '../assets/ff168b056f992b72f13ffb2245f76b4b.png'
 import Halloweendecor from '../Components/Halloween'
 import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
 import Subheader from '../Components/subheader'
 import { Eventcontext } from '../Components/Eventcontext'
+import Pageheader from '../Components/Page-header'
 const contentMap = {
   1: (
     <>
@@ -70,25 +67,14 @@ const imageMap = {
 }
   
 function App() {
-  const [opacitypercent, setopacitypercent] = useState(0)
-  const [visible, setvisibility] = useState('absolute')
+
   const [hidden, sethidden] = useState(1)
   const [istransitioning, setistransitioning] = useState(false)
-  const [snowActive, setSnowActive] = useState(false); 
-  const [isSnowman, setIsSnowman] = useState(false);
-  const [istree, setistree] = useState(false);
   const [isSpooky, setisSpooky] = useState(false);
   const [randomnumber, setrandomnumber] = useState(0);
   const [previousNumber, setPreviousNumber] = useState(null);
   const {isdark} = useContext(Eventcontext);
-  const handlemouseover = () =>{
-    setopacitypercent(100)
-    setvisibility('static')
-  }
-  const handlemouseleave = () =>{
-    setopacitypercent(0)
-    setvisibility('absolute')
-  }
+
   const handleChangeContent = (newHidden) => {
     if (newHidden !== hidden) {
       setistransitioning(true);
@@ -99,13 +85,6 @@ function App() {
       }, 500); 
     }
   };
-  const handleToggleSnowman = () => {
-    setIsSnowman(prevState => !prevState);
-    setSnowActive(!snowActive);
-  };
-  const handleToggleTree = () => {
-    setistree(prevState => !prevState);
-  }
   const getRandomInteger = (min, max) => {
     let newNumber;
     do {
@@ -121,24 +100,22 @@ function App() {
   }
   return (
       <div className='App' data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
-        <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'}/>
         <Toggle />
       <Halloweendecor 
       isSpooky={isSpooky}
       handleSpooky={() => handlespookymode()}
       />
+      <Pageheader />
       <br></br>
       <br></br>
       <Navbar />
-      <h1 className='Page-header' onMouseOver={handlemouseover} onMouseLeave={handlemouseleave}>PR<HiddenButton isSnowman={isSnowman} onToggle={handleToggleSnowman} /><Tree istree={istree} onToggle={handleToggleTree} />A 17222</h1>
-      <div className='fun-fact' style={{opacity: opacitypercent / 100, position:visible}}>PROTA means first in greek</div>
       <br></br>
       <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>
       <div className='images-main-page'>
         <img id='main-page-img'className={`image-transition ${istransitioning ? 'istransitioning' : ''}`}src={(imageMap[hidden])} alt='Picture of our team at various events and gatherings'></img>
       </div>
-      {snowActive && <Snowfall snowflakeCount="450" style={{position: 'fixed',width: '100vw',height: '100vh'}}/>}
+      
     </div>
   );
 }

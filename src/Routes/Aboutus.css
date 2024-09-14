@@ -4,6 +4,9 @@
     min-height: 100vh;
     background-color: var(--background-color);
     transition: background-color 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
 }
 @media (max-width: 600px){
     .About-Us-Container{overflow-x: hidden;}
