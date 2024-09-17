@@ -93,10 +93,11 @@ p {
   border: none;
   transition: background-color 250ms ease-in-out;
   cursor: pointer;
+  transition: all 0.6s ease-in-out;
 }
 .main-page-sel:focus {
   scale: 1.2;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.6s ease-in-out;
   color: var(--tertiary-text-color);
   border-radius: 5px;
   outline: none;
