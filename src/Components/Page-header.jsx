@@ -19,7 +19,7 @@ const handleToggleSnowman = () => {
   }
 return(
     <div className="Pageheader">
-      {snowActive && ( <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'} alt="Santa" className={`santa-image ${snowActive ? 'active' : 'inactive'}`} />)}
+       <img id='santa' src={santa} data-santa={snowActive ? 'true' : 'false'} alt="Santa" className={`santa-image ${snowActive ? 'active' : 'inactive'}`} />
         <h1 className='Page-header'>PR<HiddenButton isSnowman={isSnowman} onToggle={handleToggleSnowman} /><Tree istree={istree} onToggle={handleToggleTree} />A 17222</h1>
         {snowActive && <Snowfall snowflakeCount="450" style={{position: 'fixed',width: '100vw',height: '100vh'}}/>}
     </div>    

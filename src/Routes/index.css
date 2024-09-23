@@ -188,6 +188,7 @@ img {
   width: 4em;
   height: 4em;
   aspect-ratio: 1/1;
+  z-index: 50;
 }
 #santa[data-santa='false'] {  
   opacity: 0;
