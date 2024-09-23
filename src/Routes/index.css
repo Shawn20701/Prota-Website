@@ -15,6 +15,11 @@ html, body {
 @media (max-width: 600px){
   .App{margin-left: 0; margin-top: 5vh;}
 }
+
+.Pageheader{
+  overflow: hidden; 
+}
+
 .mobile-navbar{
   display: none;
 }
