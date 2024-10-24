@@ -59,7 +59,7 @@ export default function Departments(){
                     <h1 className='title'>Strategy</h1>
                 </div>
                 <div className='subheader-container'>
-                    <p className='content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad magni, inventore dolores animi aliquam excepturi perspiciatis a laborum doloremque, id dolorem ullam. Laudantium distinctio quas maxime, eos ab quibusdam.</p>
+                    <p className='content'>The goal of the Prota strategic department is to make our robot and team as effective and efficient as possible</p>
                 </div>
                 <div className='title-container'>
                     <h1 className='title'>Outreach</h1>
