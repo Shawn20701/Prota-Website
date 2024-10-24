@@ -28,7 +28,7 @@ export default function Departments(){
                 </div>
                 <div className='subheader-container'>
                     <p className='content'>
-                        Programming is an essential part of robotics. Programming is what makes the robot run. We use many programming languages in robotics including: Python, Javascript,  
+                        Programming is an essential part of robotics. Programming is what makes the robot run. We use many programming languages in robotics including: Python, Javascript, and Java.  
                     </p>
                 </div>
                 <div className='img-container'>
