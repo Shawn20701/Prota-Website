@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import  './Departments.css'
 import Github from '../assets/Github.svg'
 import Java from '../assets/Java.svg'
@@ -7,9 +8,12 @@ import { Eventcontext } from '../Components/Eventcontext'
 import Toggle from '../Components/Toggle'
 import '../css/event-themes.css'
 import Pageheader from '../Components/Page-header'
+import Navbar from '../Components/Navbar'
 import './index.css'
 export default function Departments(){
     const {isdark} = useContext(Eventcontext);
+    // eslint-disable-next-line no-unused-vars
+    const [isNavbarHovered, setIsNavbarHovered] = useState(false);
     const month = new Date().getMonth();
     const themes = [
       "winter-theme", "winter-spring-theme", "spring-theme", "spring-theme",
@@ -18,8 +22,9 @@ export default function Departments(){
     ];
     const currentTheme = themes[month];
     return (
-        <div id='Container'className={`Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
-            
+        <>
+        <Navbar onHoverChange={setIsNavbarHovered}/>
+        <div className={`Dept-Container ${isNavbarHovered ? 'navbar-hovered' : ''} Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
             <Toggle />
             <Pageheader />
             <div className='programming-container'>
@@ -69,6 +74,6 @@ export default function Departments(){
                 </div>
             </div>
         </div>
-
+        </>
     );
 }

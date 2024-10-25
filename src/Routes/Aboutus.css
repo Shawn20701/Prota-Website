@@ -6,12 +6,17 @@
     transition: background-color 250ms ease-in-out;
     display: flex;
     flex-direction: column;
-    margin-left: 10vw;
     overflow-x: hidden;
-}
+    margin-left: 6rem; 
+    transition: margin-left 0.6s; 
+  }
+  .navbar-hovered {
+    margin-left: 10rem; 
+  }
 @media (max-width: 600px){
     .About-Us-Container{overflow-x: hidden;}
 }
+
 .page-header {
     font-family: Impact;
     font-size: 5rem;

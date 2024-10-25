@@ -74,6 +74,8 @@ function App() {
   const [randomnumber, setrandomnumber] = useState(0);
   const [previousNumber, setPreviousNumber] = useState(null);
   const {isdark} = useContext(Eventcontext);
+  // eslint-disable-next-line no-unused-vars
+  const [isNavbarHovered, setIsNavbarHovered] = useState(false);
 
   const handleChangeContent = (newHidden) => {
     if (newHidden !== hidden) {
@@ -99,7 +101,9 @@ function App() {
     setrandomnumber(newNumber);
   }
   return (
-      <div className='App' data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
+    <>
+      <Navbar onHoverChange={setIsNavbarHovered}/>
+      <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
         <Toggle />
       <Halloweendecor 
       isSpooky={isSpooky}
@@ -108,7 +112,7 @@ function App() {
       <Pageheader />
       <br></br>
       <br></br>
-      <Navbar />
+      
       <br></br>
       <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>
@@ -117,6 +121,7 @@ function App() {
       </div>
       
     </div>
+    </>
   );
 }
 export default App

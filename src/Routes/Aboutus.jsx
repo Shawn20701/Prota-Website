@@ -8,13 +8,15 @@ import Pageheader from '../Components/Page-header'
 import Navbar from "../Components/Navbar";
 export default function Aboutus(){
     const [cursorStyle, setcursorStyle] = useState('default');
+    const [isNavbarHovered, setIsNavbarHovered] = useState(false);
     const {isdark} = useContext(Eventcontext);
     const changeCursor = () => {
         setcursorStyle(prevStyle => prevStyle === 'default' ? 'custom' : 'default');
     };
     return (
-        <div className={`About-Us-Container ${cursorStyle}`} data-theme={isdark ? "dark" : "light"}>
-            <Navbar className="navbar-mobile" />
+        <>
+        <Navbar onHoverChange={setIsNavbarHovered}/>
+        <div className={`About-Us-Container ${cursorStyle} ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"}>
             <Toggle /> 
             <Pageheader />
             <h1 className='page-header'>We are team PROTA 172<h1 className='mobile-replace-button'>2</h1><button id='secretbutton'onClick={() => changeCursor()}>2</button>2</h1>
@@ -30,5 +32,6 @@ export default function Aboutus(){
             <h1 className='page-header'><button id='Department-Button'><a href='/About-us/Departments'>Our Departments</a></button></h1>
             <div className='space'></div>
         </div>
+        </>
     )
 }
