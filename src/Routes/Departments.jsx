@@ -5,7 +5,6 @@ import Java from '../assets/Java.svg'
 import React from '../assets/React.svg'
 import { useContext} from 'react'
 import { Eventcontext } from '../Components/Eventcontext'
-import Toggle from '../Components/Toggle'
 import '../css/event-themes.css'
 import Pageheader from '../Components/Page-header'
 import Navbar from '../Components/Navbar'
@@ -25,7 +24,7 @@ export default function Departments(){
         <>
         <Navbar onHoverChange={setIsNavbarHovered}/>
         <div className={`Dept-Container ${isNavbarHovered ? 'navbar-hovered' : ''} Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
-            <Toggle />
+            
             <Pageheader />
             <div className='programming-container'>
                 <div className='title-container'>
