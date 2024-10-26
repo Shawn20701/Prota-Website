@@ -28,7 +28,6 @@ export default function Aboutus(){
                 <li className='item'>POWERPLAY</li>
                 <li className='item'>Centerstage</li>
             </ul>
-            <h1 className='page-header'><button id='Department-Button'><a href='/About-us/Departments'>Our Departments</a></button></h1>
             <div className='space'></div>
         </div>
         </>
