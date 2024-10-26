@@ -10,20 +10,13 @@ import Pageheader from '../Components/Page-header'
 import Navbar from '../Components/Navbar'
 import './index.css'
 export default function Departments(){
-    const {isdark} = useContext(Eventcontext);
+    const {isdark, isSpooky} = useContext(Eventcontext);
     // eslint-disable-next-line no-unused-vars
     const [isNavbarHovered, setIsNavbarHovered] = useState(false);
-    const month = new Date().getMonth();
-    const themes = [
-      "winter-theme", "winter-spring-theme", "spring-theme", "spring-theme",
-      "spring-theme", "spring-summer-theme", "summer-theme", "summer-theme",
-      "summer-fall-theme", "fall-theme", "fall-winter-theme", "winter-theme"
-    ];
-    const currentTheme = themes[month];
     return (
         <>
         <Navbar onHoverChange={setIsNavbarHovered}/>
-        <div className={`Dept-Container ${isNavbarHovered ? 'navbar-hovered' : ''} Departments ${currentTheme}`} data-theme={isdark ? "dark" : "light"}>
+        <div className={`Dept-Container ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""}>
             
             <Pageheader />
             <div className='programming-container'>

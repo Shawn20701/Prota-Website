@@ -10,7 +10,6 @@ export const Toggle = () => {
   return (
     <div className='toggle-container' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
       <FontAwesomeIcon icon={isdark ? faSun : faMoon} className='icon' />
-      
     </div>
   );
 };

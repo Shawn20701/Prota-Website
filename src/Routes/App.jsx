@@ -2,7 +2,6 @@ import './index.css'
 import { useState, useContext } from 'react'
 import teamphoto from '../assets/Team-Photo.JPG'
 import hishavenphoto from '../assets/His-Haven-Photo.jpg'
-import Halloweendecor from '../Components/Halloween'
 import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
 import Subheader from '../Components/subheader'
@@ -69,10 +68,7 @@ function App() {
 
   const [hidden, sethidden] = useState(1)
   const [istransitioning, setistransitioning] = useState(false)
-  const [isSpooky, setisSpooky] = useState(false);
-  const [randomnumber, setrandomnumber] = useState(0);
-  const [previousNumber, setPreviousNumber] = useState(null);
-  const {isdark} = useContext(Eventcontext);
+  const {isdark, isSpooky} = useContext(Eventcontext);
   // eslint-disable-next-line no-unused-vars
   const [isNavbarHovered, setIsNavbarHovered] = useState(false);
 
@@ -86,27 +82,11 @@ function App() {
       }, 500); 
     }
   };
-  const getRandomInteger = (min, max) => {
-    let newNumber;
-    do {
-      newNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    } while (newNumber === previousNumber);
-    setPreviousNumber(newNumber);
-    return newNumber;
-  }
-  const handlespookymode = () => {
-    setisSpooky(!isSpooky);
-    const newNumber = getRandomInteger(1,5);
-    setrandomnumber(newNumber);
-  }
+
   return (
     <>
       <Navbar onHoverChange={setIsNavbarHovered}/>
-      <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
-      <Halloweendecor 
-      isSpooky={isSpooky}
-      handleSpooky={() => handlespookymode()}
-      />
+      <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} >
       <Pageheader />
       <br></br>
       <br></br>

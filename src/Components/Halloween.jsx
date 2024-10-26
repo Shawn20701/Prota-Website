@@ -1,17 +1,18 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-import React from "react";
+// eslint-disable-next-line no-unused-vars
+import React, { useContext } from 'react';
+import { Eventcontext } from './Eventcontext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGhost} from '@fortawesome/free-solid-svg-icons'; 
 
-function Halloweendecor ({handleSpooky, isSpooky}) {
-    const now = new Date();
-    const isOctober = now.getMonth() === 9;
+const HalloweenToggle = () => {
+    // eslint-disable-next-line no-unused-vars
+    const { isSpooky, handlespookymode } = useContext(Eventcontext);
+
     return (
-        <div>
-            {isOctober ? <div className='spooky-button'>
-            <input type='checkbox' id='spook' className='toggle-event' onChange={handleSpooky} checked={isSpooky} />
-            <label htmlFor='spook'>Spooky Mode</label> </div> : ""}
+        <div className='toggle-container' onClick={handlespookymode} style={{ cursor: 'pointer' }}>
+            <FontAwesomeIcon icon={faGhost} className='icon' />
         </div>
     );
-}
+};
 
-export default Halloweendecor;
+export default HalloweenToggle;

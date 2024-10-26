@@ -1,6 +1,6 @@
 .navbar-container {
     position: fixed;
-    background-color: black;
+    background-color: #3C4142;
     width: 6rem;
     transition: width 0.6s; 
     z-index: 1000;
@@ -31,31 +31,36 @@
     opacity: 0;
     transition: opacity 0.3s linear;
     display: flex;
-    display: none;
+    color: #FFB3BA;
+    visibility: hidden;
     flex-direction: column; 
     align-items: center; 
 }
 .navbar-item{
     display: flex;
+    width: 100%;
     flex-direction: column; 
     align-items: center; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+.navbar-item:hover{
+    background-color: #444;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 .navbar-item .icon {
     margin-bottom: 0.5rem; 
-    color: purple;
+    color: #FFB3BA;
     opacity: 1;
     visibility: visible;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
-
 .navbar-container:hover .navbar-item a{
     opacity: 1;
     display: inline;
+    visibility: visible;
 }
 .navbar-item .icon {
     visibility: visible; 
 }
-.navbar-item .icon:last-child{
-    margin-top: 20px;
-    transition: all 0.6s;
-}
+

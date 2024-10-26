@@ -18,7 +18,7 @@
 }
 
 .page-header {
-    font-family: Impact;
+    font-family: var(--font-main);
     font-size: 5rem;
     color: transparent;
     text-align: center;
@@ -40,7 +40,7 @@
     #page-subheader{font-size: 2rem}
 }
 .list-container {
-    font-family: Impact;
+    font-family: var(--font-main);
     font-size: 4.5rem;
     color: var(--primary-text-color);
     text-align: center;
@@ -89,7 +89,7 @@
     box-shadow: none;
     font-weight: bold;
     font-size: 5rem;
-    font-family: Impact;
+    font-family: var(--font-main);
     color: transparent;
     background: linear-gradient(to right, var(--foreground-color), var(--link-color));
     background-clip: text;
