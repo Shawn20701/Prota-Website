@@ -3,9 +3,9 @@ import React, {useContext, useState} from "react";
 import './index.css'
 import './Aboutus.css'
 import { Eventcontext } from "../Components/Eventcontext";
-
 import Pageheader from '../Components/Page-header'
 import Navbar from "../Components/Navbar";
+import ImageMap from "../Components/ImageComponent";
 export default function Aboutus(){
     const [cursorStyle, setcursorStyle] = useState('default');
     const [isNavbarHovered, setIsNavbarHovered] = useState(false);
@@ -28,8 +28,9 @@ export default function Aboutus(){
                 <li>Improve STEAM connections and opportunities in our larger community</li>
                 <li>Understand and practice discernment with technology usage</li>
             </ul>
-            <div className='space'></div>
         </div>
+        <ImageMap />
+        <div className="space"></div>
         </>
     )
 }
