@@ -2,7 +2,6 @@ import './index.css'
 import { useState, useContext } from 'react'
 import teamphoto from '../assets/Team-Photo.JPG'
 import hishavenphoto from '../assets/His-Haven-Photo.jpg'
-import {Toggle} from '../Components/Toggle'
 import Halloweendecor from '../Components/Halloween'
 import '../css/event-themes.css'
 import Navbar from '../Components/Navbar'
@@ -104,7 +103,6 @@ function App() {
     <>
       <Navbar onHoverChange={setIsNavbarHovered}/>
       <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} data-num={randomnumber}>
-        <Toggle />
       <Halloweendecor 
       isSpooky={isSpooky}
       handleSpooky={() => handlespookymode()}
