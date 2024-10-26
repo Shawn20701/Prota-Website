@@ -18,6 +18,7 @@ html, body {
 }
 @media (max-width: 600px){
   .App{margin-left: 0; margin-top: 5vh;}
+  .navbar-hovered{margin-left: 0; margin-top: 10vh;}
 }
 
 .Pageheader{
@@ -222,3 +223,4 @@ img {
 @media (min-width: 1280px){
   .hidden-button{font-size: 6rem}
 }
+

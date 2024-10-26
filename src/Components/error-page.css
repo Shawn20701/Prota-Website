@@ -1,7 +1,6 @@
-
-body {
-    background: linear-gradient(to bottom, var(--background-color), var(--foreground-color));
+body{
     margin: 0;
+    background-color: var(--background-color);
 }
 #error-page-header {
     text-align: center;

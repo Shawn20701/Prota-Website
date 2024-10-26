@@ -1,5 +1,5 @@
 import './index.css'
-import { useState, useContext } from 'react'
+import { useState, useContext} from 'react'
 import teamphoto from '../assets/Team-Photo.JPG'
 import hishavenphoto from '../assets/His-Haven-Photo.jpg'
 import '../css/event-themes.css'

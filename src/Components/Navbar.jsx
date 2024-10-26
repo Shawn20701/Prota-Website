@@ -4,6 +4,7 @@ import { Eventcontext } from './Eventcontext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faVideo, faCalendarAlt, faBook } from '@fortawesome/free-solid-svg-icons';
 import Toggle from './Toggle';
+import '../css/event-themes.css';
 import HalloweenToggle from './Halloween';
 
 // eslint-disable-next-line react/prop-types

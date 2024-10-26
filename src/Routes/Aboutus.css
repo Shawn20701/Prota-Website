@@ -32,16 +32,25 @@
     .page-header{font-size: 3rem; margin-top: 5vh;}
 }
 #page-subheader {
-    font-family: Impact;
-    font-size: 3rem;
+    font-family: var(--font-main);
+    font-size: var(--font-size-subcontent);
     color: var(--primary-text-color);
+    text-align: center;
 }
 @media (max-width: 600px){
     #page-subheader{font-size: 2rem}
 }
 .list-container {
     font-family: var(--font-main);
-    font-size: 4.5rem;
+    font-size: var(--font-size-subcontent);
+    color: var(--primary-text-color);
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.Mission-statement{
+    font-size: var(--font-size-subheader);
+    font-family: var(--font-main);
     color: var(--primary-text-color);
     text-align: center;
 }
