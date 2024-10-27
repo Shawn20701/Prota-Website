@@ -9,11 +9,11 @@ const HalloweenToggle = () => {
     const currentMonth = new Date().getMonth();
 
     const monthIcons = {
-        9: {
+        10: {
             icon: faSnowman,
             handler: setWinterMode,
         },
-        10: {
+        9: {
             icon: faGhost,
             handler: setSpookyMode,
         },
