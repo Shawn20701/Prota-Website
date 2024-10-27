@@ -69,7 +69,7 @@ function App() {
 
   const [hidden, sethidden] = useState(1)
   const [istransitioning, setistransitioning] = useState(false)
-  const {isdark, isSpooky} = useContext(Eventcontext);
+  const {isdark, eventMode} = useContext(Eventcontext);
   // eslint-disable-next-line no-unused-vars
   const [isNavbarHovered, setIsNavbarHovered] = useState(false);
 
@@ -87,7 +87,7 @@ function App() {
   return (
     <>
       <Navbar onHoverChange={setIsNavbarHovered}/>
-      <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={isSpooky ? "Spooky" : ""} >
+      <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={eventMode}>
       <Pageheader />
       <br></br>
       <br></br>

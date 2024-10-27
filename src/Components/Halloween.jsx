@@ -5,25 +5,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGhost, faSnowman} from '@fortawesome/free-solid-svg-icons'; 
 
 const HalloweenToggle = () => {
-    // eslint-disable-next-line no-unused-vars
-    const { isSpooky, handlespookymode, iswinter, handlewintermode } = useContext(Eventcontext);
+    const { setSpookyMode, setWinterMode } = useContext(Eventcontext);
     const currentMonth = new Date().getMonth();
-    
-    if (currentMonth === 9) {
+
+    const monthIcons = {
+        9: {
+            icon: faSnowman,
+            handler: setWinterMode,
+        },
+        10: {
+            icon: faGhost,
+            handler: setSpookyMode,
+        },
+    };
+
+    const currentIcon = monthIcons[currentMonth];
+
+    if (currentIcon) {
         return (
-            <div className='toggle-container' onClick={handlespookymode} style={{ cursor: 'pointer' }}>
-                <FontAwesomeIcon icon={faGhost} className='icon' />
+            <div
+                className='toggle-container'
+                onClick={currentIcon.handler}
+                style={{ cursor: 'pointer' }}
+            >
+                <FontAwesomeIcon icon={currentIcon.icon} className='icon' />
             </div>
         );
     }
-    else if (currentMonth === 11) {
-        return <div className='toggle-container' onClick={handlewintermode} style={{cursor: "pointer"}}>
-            <FontAwesomeIcon icon={faSnowman} className='icon' />
-        </div>
-    } else {
-        return null;
-    }
 
+    return null;
 };
-
 export default HalloweenToggle;

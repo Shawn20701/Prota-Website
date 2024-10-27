@@ -6,6 +6,7 @@
     --primary-text-color: #000000; /* Black */
     --secondary-text-color: #ffffff; /* White */
     --tertiary-text-color: #ff8c00; /* Dark orange */
+    --icon-color: #FFB3BA;
     --font-main: 'Open Sans', sans-serif; /* Main font for pages */
     --link-color: #dc143c; /* Crimson */
     --font-size-title: 2.5rem; /* Title font size */
@@ -21,7 +22,8 @@
     --foreground-text-color: #ffffff; 
     --primary-text-color: #9b30ff; 
     --secondary-text-color: #ffffff; 
-    --tertiary-text-color: #4169e1; 
+    --tertiary-text-color: #4169e1;
+    --icon-color: #FF6F61;
     --link-color: #00ffff; 
 }
 
@@ -33,6 +35,7 @@
     --primary-text-color: #3e2723; 
     --secondary-text-color: #ffffff; 
     --tertiary-text-color: #ffeb3b; 
+    --icon-color: #4B0082;
     --font-main: 'Creepster', cursive; 
     --link-color: #6a1b9a; 
 }
@@ -63,27 +66,30 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --foreground-text-color: #ffffff; 
     --primary-text-color: #ffeb3b; 
     --secondary-text-color: #000000; 
-    --tertiary-text-color: #d50000; 
+    --tertiary-text-color: #d50000;
+    --icon-color: #4B0082; 
     --font-main: 'Creepster', cursive; 
     --link-color: #ba68c8; 
 }
 [data-event='Winter']{
-    --background-color: #121212;
-    --foreground-color: #e65100;
-    --foreground-text-color: #ffffff; 
-    --primary-text-color: #ffeb3b; 
-    --secondary-text-color: #000000; 
-    --tertiary-text-color: #d50000; 
-    --font-main: 'Creepster', cursive; 
-    --link-color: #ba68c8; 
+    --background-color: #f0f8ff;
+    --foreground-color: #2c3e50;
+    --foreground-text-color: #ffffff;
+    --primary-text-color: #c0392b;
+    --secondary-text-color: #27ae60;
+    --tertiary-text-color: #f1c40f;
+    --icon-color: #ffffff;
+    --font-main: 'Mountains of Christmas', sans-serif;
+    --link-color: #2980b9;     
 }
 [data-theme='dark'][data-event='Winter']{
-    --background-color: #121212;
-    --foreground-color: #e65100;
-    --foreground-text-color: #ffffff; 
-    --primary-text-color: #ffeb3b; 
-    --secondary-text-color: #000000; 
-    --tertiary-text-color: #d50000; 
-    --font-main: 'Creepster', cursive; 
-    --link-color: #ba68c8; 
+    --background-color: #1a1a1a;
+    --foreground-color: #3cb371;
+    --foreground-text-color: #e6e6e6;
+    --primary-text-color: #ff4d4d;
+    --secondary-text-color: #66b3a1;
+    --tertiary-text-color: #d4af37;
+    --icon-color: #ffffff;
+    --font-main: 'Mountains of Christmas', sans-serif; 
+    --link-color: #66c2ff;   
 }

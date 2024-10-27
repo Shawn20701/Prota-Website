@@ -59,14 +59,11 @@
 }
 .navbar-item .icon {
     margin-bottom: 0.5rem; 
-    color: #FFB3BA;
+    color: var(--icon-color);
     opacity: 1;
     visibility: visible;
     font-size: 2.5rem;
     transition: color 0.6s;
-}
-.navbar-item:hover .icon{
-    color: #ea5ad4;
 }
 .navbar-container:hover .navbar-item a{
     opacity: 1;
