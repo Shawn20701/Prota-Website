@@ -10,6 +10,7 @@ export const EventProvider = ({ children }) => {
   });
 
   const [isSpooky, setIsSpooky] = useState(false);
+  const [isWinter, setIsWinter] = useState(false);
 
   const toggleDarkMode = () => {
     const newMode = !isdark;
@@ -19,16 +20,21 @@ export const EventProvider = ({ children }) => {
   const handlespookymode = () => {
     setIsSpooky(prev => !prev);
   };
+  const handlewintermode = () => {
+    setIsWinter(prev => !prev);
+  };
   useEffect(() => {
     document.documentElement.setAttribute('data-event', isSpooky ? 'Spooky' : '');
+    document.documentElement.setAttribute('data-event', isWinter ? 'Winter' : '');
     document.documentElement.setAttribute('data-theme', isdark ? 'dark' : '');
     return () => {
       document.documentElement.removeAttribute('data-event');
+      document.documentElement.removeAttribute('data-event');
       document.documentElement.removeAttribute('data-theme');
     };
-  }, [isSpooky, isdark]);
+  }, [isSpooky, isdark, isWinter]);
   return (
-    <Eventcontext.Provider value={{ isdark, toggleDarkMode, isSpooky, handlespookymode }}>
+    <Eventcontext.Provider value={{ isdark, toggleDarkMode, isSpooky, handlespookymode, isWinter, handlewintermode }}>
       {children}
     </Eventcontext.Provider>
   );

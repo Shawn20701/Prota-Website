@@ -19,7 +19,8 @@ const contentMap = {
   ),
   2: (
     <>
-      Our mission is to spread the gospel and to also spread the {''}<a className='inserted-link' href='https://www.firstinspires.org/robotics/ftc'>FIRST Tech Challenge</a> and robotics in general to our community.
+      
+Our mission is to celebrate our Creator and team diversity, promote gracious professionalism and STEAM in our community, and practice discernment in technology use.
     </>
   ),
   3: (
