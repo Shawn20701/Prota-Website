@@ -1,14 +1,14 @@
 /* Default Theme */
 :root {
-    --background-color: #f5f5dc; /* Antique white */
-    --foreground-color: #800000; /* Maroon */
-    --foreground-text-color: #ffffff; /* White */
-    --primary-text-color: #000000; /* Black */
-    --secondary-text-color: #ffffff; /* White */
-    --tertiary-text-color: #ff8c00; /* Dark orange */
+    --background-color: #f5f5dc; 
+    --foreground-color: #800000; 
+    --foreground-text-color: #ffffff; 
+    --primary-text-color: #000000; 
+    --secondary-text-color: #ffffff; 
+    --tertiary-text-color: #ff8c00; 
     --icon-color: #FFB3BA;
     --font-main: 'Open Sans', sans-serif; /* Main font for pages */
-    --link-color: #dc143c; /* Crimson */
+    --link-color: #dc143c; 
     --font-size-title: 2.5rem; /* Title font size */
     --font-size-content: 1.5rem; /* Content font size */
     --font-size-subheader: 1.75rem; /* Subheader font size */
@@ -72,24 +72,10 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --link-color: #ba68c8; 
 }
 [data-event='Winter']{
-    --background-color: #f0f8ff;
-    --foreground-color: #2c3e50;
-    --foreground-text-color: #ffffff;
-    --primary-text-color: #c0392b;
-    --secondary-text-color: #27ae60;
-    --tertiary-text-color: #f1c40f;
-    --icon-color: #ffffff;
-    --font-main: 'Mountains of Christmas', sans-serif;
-    --link-color: #2980b9;     
+    --font-main: "Mountains of Christmas", sans-serif;
+    --background-color: white;
 }
 [data-theme='dark'][data-event='Winter']{
-    --background-color: #1a1a1a;
-    --foreground-color: #3cb371;
-    --foreground-text-color: #e6e6e6;
-    --primary-text-color: #ff4d4d;
-    --secondary-text-color: #66b3a1;
-    --tertiary-text-color: #d4af37;
-    --icon-color: #ffffff;
-    --font-main: 'Mountains of Christmas', sans-serif; 
-    --link-color: #66c2ff;   
+        --font-main: "Mountains of Christmas", sans-serif;
+            --background-color: Black;
 }
