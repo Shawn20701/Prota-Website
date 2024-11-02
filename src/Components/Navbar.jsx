@@ -38,7 +38,7 @@ export const Navbar = ({ onHoverChange }) => {
                 </li>
                 <li className='navbar-item'>
                     <FontAwesomeIcon className='icon' icon={faBook} color='#FFB3BA' />
-                    <a className='navbar-button' href='/about-us/Departments'>Departments</a>
+                    <a className='navbar-button' href='/about-us/Departments'>Sections</a>
                 </li>
                 <li className='navbar-item' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
                     <Toggle />

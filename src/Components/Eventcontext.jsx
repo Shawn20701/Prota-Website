@@ -22,6 +22,9 @@ export const EventProvider = ({ children }) => {
   const setWinterMode = () => {
     setEventMode(prev => (prev === 'Winter' ? '' : 'Winter'));
   };
+  const setFallMode = () => {
+    setEventMode(prev => (prev === 'Fall' ? '' : 'Fall'));
+  }
   useEffect(() => {
     document.documentElement.setAttribute('data-event', eventMode);
     document.documentElement.setAttribute('data-theme', isdark ? 'dark' : '');
@@ -32,7 +35,7 @@ export const EventProvider = ({ children }) => {
     };
   }, [eventMode, isdark]);
   return (
-    <Eventcontext.Provider value={{ isdark, toggleDarkMode, eventMode, setSpookyMode, setWinterMode }}>
+    <Eventcontext.Provider value={{ isdark, toggleDarkMode, eventMode, setSpookyMode, setWinterMode, setFallMode }}>
       {children}
     </Eventcontext.Provider>
   );

@@ -71,6 +71,28 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --font-main: 'Creepster', cursive; 
     --link-color: #ba68c8; 
 }
+[data-event='Fall']{
+    --background-color: rgba(246, 207, 134, 0.947);
+    --foreground-color: rgb(252, 121, 121);
+    --foreground-text-color:  rgb(230, 230, 154); 
+    --primary-text-color: rgb(0, 0, 0); 
+    --secondary-text-color:  rgb(236, 157, 53); 
+    --tertiary-text-color: rgb(110, 189, 110);
+    --icon-color:  rgb(87, 41, 41); 
+    --font-main: 'Rye', open-sans; 
+    --link-color: rgba(255, 166, 0, 0.788);
+}
+[data-event='Fall'][data-theme='dark']{
+    --background-color: rgba(34, 28, 18, 0.947);
+    --foreground-color: rgb(224, 146, 50);
+    --foreground-text-color:  rgb(230, 230, 154); 
+    --primary-text-color: rgb(244, 216, 216); 
+    --secondary-text-color:  rgb(236, 157, 53); 
+    --tertiary-text-color: rgb(110, 189, 110);
+    --icon-color:  rgb(87, 41, 41); 
+    --font-main: 'Rye', open-sans; 
+    --link-color: rgba(255, 166, 0, 0.788);
+}
 [data-event='Winter']{
     --background-color: #f0f8ff;
     --foreground-color: #2c3e50;

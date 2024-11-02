@@ -2,16 +2,20 @@
 import React, { useContext } from 'react';
 import { Eventcontext } from './Eventcontext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGhost, faSnowman} from '@fortawesome/free-solid-svg-icons'; 
+import { faGhost, faSnowman, faLeaf} from '@fortawesome/free-solid-svg-icons'; 
 
 const HalloweenToggle = () => {
-    const { setSpookyMode, setWinterMode } = useContext(Eventcontext);
+    const { setSpookyMode, setWinterMode, setFallMode } = useContext(Eventcontext);
     const currentMonth = new Date().getMonth();
 
     const monthIcons = {
-        10: {
+        11: {
             icon: faSnowman,
             handler: setWinterMode,
+        },
+        10: {
+            icon: faLeaf,
+            handler: setFallMode,
         },
         9: {
             icon: faGhost,
