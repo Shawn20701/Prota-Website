@@ -77,7 +77,7 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --foreground-text-color:  rgb(230, 230, 154); 
     --primary-text-color: rgb(0, 0, 0); 
     --secondary-text-color:  rgb(236, 157, 53); 
-    --tertiary-text-color: rgb(110, 189, 110);
+    --tertiary-text-color: rgb(224, 140, 140);
     --icon-color:  rgb(87, 41, 41); 
     --font-main: 'Rye', open-sans; 
     --link-color: rgba(255, 166, 0, 0.788);
@@ -88,7 +88,7 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --foreground-text-color:  rgb(230, 230, 154); 
     --primary-text-color: rgb(244, 216, 216); 
     --secondary-text-color:  rgb(236, 157, 53); 
-    --tertiary-text-color: rgb(110, 189, 110);
+    --tertiary-text-color: rgb(224, 140, 140);
     --icon-color:  rgb(87, 41, 41); 
     --font-main: 'Rye', open-sans; 
     --link-color: rgba(255, 166, 0, 0.788);
@@ -100,4 +100,33 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
 [data-theme='dark'][data-event='Winter']{
         --font-main: "Mountains of Christmas", sans-serif;
             --background-color: Black;
+}
+[date-event='New_Years']{
+
+}
+[date-event='New_Years'][data-theme='dark']{
+
+}
+[date-event='Valentines'] {}
+
+[date-event='Valentines'][data-theme='dark'] {
+
+}
+[data-event='Patricks_day']{
+
+}
+[data-event='Patricks_day'][data-theme='dark']{
+
+}
+[data-event='Easter']{
+
+}
+[data-event='Easter'][data-theme='dark'] {
+
+}
+[data-event='March'] {
+
+}
+[data-event='March'][data-theme='dark'] {
+
 }
