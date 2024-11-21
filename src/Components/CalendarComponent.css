@@ -30,6 +30,7 @@
 }
 .fc-event {
     background-color: var(--icon-color); 
+    border: var(--icon-color);
     color: #fff; 
     border-radius: 5px;
     display: block; 
