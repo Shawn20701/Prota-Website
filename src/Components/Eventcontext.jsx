@@ -25,6 +25,12 @@ export const EventProvider = ({ children }) => {
   const setFallMode = () => {
     setEventMode(prev => (prev === 'Fall' ? '' : 'Fall'));
   }
+  const setNewYearsMode = () => {
+    setEventMode(prev => (prev === 'New_Years' ? '' : 'New_Years'));
+  }
+  const setValentinesDayMode = () => {
+    setEventMode(prev => (prev === 'Valentines' ? '' : 'Valentines'));
+  }
   useEffect(() => {
     document.documentElement.setAttribute('data-event', eventMode);
     document.documentElement.setAttribute('data-theme', isdark ? 'dark' : '');
@@ -35,7 +41,7 @@ export const EventProvider = ({ children }) => {
     };
   }, [eventMode, isdark]);
   return (
-    <Eventcontext.Provider value={{ isdark, toggleDarkMode, eventMode, setSpookyMode, setWinterMode, setFallMode }}>
+    <Eventcontext.Provider value={{ isdark, toggleDarkMode, eventMode, setSpookyMode, setWinterMode, setFallMode, setNewYearsMode, setValentinesDayMode }}>
       {children}
     </Eventcontext.Provider>
   );
