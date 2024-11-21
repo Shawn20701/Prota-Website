@@ -1,7 +1,7 @@
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
-
+import './CalendarComponent.css'
 const CalendarApp = () => {
   const googleCalendarApiKey =  import.meta.env.VITE_GOOGLE_CALENDAR_API_KEY;
   return (

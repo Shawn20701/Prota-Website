@@ -1,19 +1,19 @@
 import CalendarComponent from '../Components/CalendarComponent';
 import './Calendar.css';
-import Toggle from '../Components/Toggle';
+import { useState } from 'react';
 import { Eventcontext } from '../Components/Eventcontext';
 import { useContext } from 'react';
 import Pageheader from '../Components/Page-header';
+import Navbar from '../Components/Navbar';
 export default function Calendar(){
-    const {isdark} = useContext(Eventcontext);
+    const {isdark, eventMode} = useContext(Eventcontext);
+    // eslint-disable-next-line no-unused-vars
+    const [isNavbarHovered, setIsNavbarHovered] = useState(false);
     return (
         <>
-            <div className='Calendar-container' data-theme={isdark ? "dark" : "light"}>
+            <Navbar onHoverChange={setIsNavbarHovered}/>
+            <div className={`Calendar-container ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={eventMode}>
                 <Pageheader />
-                <div id='Calendar-dark-toggle'>
-                    <Toggle />
-                </div> 
-                <h1 className='calendar-header'>PROTA 17222 TEAM CALENDAR</h1>
                 <div id='Calendar'>
                     <CalendarComponent />
                 </div>

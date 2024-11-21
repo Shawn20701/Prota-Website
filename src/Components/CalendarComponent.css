@@ -4,12 +4,26 @@
     transition: background-color 250ms ease-in-out;
     text-align: center;
 }
-
+.fc-daygrid{
+    flex-wrap: wrap;
+    display: flex;
+}
 .fc-daygrid-day {
+    flex: 1;
     background-color: var(--background-color);
     transition: background-color 250ms ease-in-out;
+    min-width: 0; 
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: 0;
 }
-
+.fc-col-header,
+.fc-daygrid-body,
+.fc-scrollgrid-sync-table,
+.fc-daygrid-body, 
+.fc-daygrid-body table {
+    width: 100% !important;
+}
 .fc-daygrid-day:hover {
     background-color: var(--foreground-color);
     transition: all 250ms ease-in-out; 
@@ -17,7 +31,8 @@
 .fc-event {
     background-color: var(--icon-color); 
     color: #fff; 
-    border-radius: 5px; 
+    border-radius: 5px;
+    display: block; 
 }
 .fc-event-title {
     color: #ffffff; 
@@ -30,11 +45,11 @@
     font-size: 12px; 
 }
 td .fc-daygrid-day-top .fc-daygrid-day-number{
-    color: var(--primary-text-color) !important; 
+    color: var(--tertiary-text-color) !important; 
     font-weight: bold; 
 }
 .fc-toolbar-title {
-    color: var(--primary-text-color); 
+    color: var(--tertiary-text-color); 
     font-size: 25px; 
     text-align: center;
 }
