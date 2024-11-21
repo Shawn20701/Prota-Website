@@ -91,7 +91,6 @@ function App() {
       <Pageheader />
       <br></br>
       <br></br>
-      
       <br></br>
       <Subheader handleChangeContent={handleChangeContent}/>
       <p className={`Content-1 content-transition ${istransitioning ? 'istransitioning' : ''}`}>{contentMap[hidden]}</p>

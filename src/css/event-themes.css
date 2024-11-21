@@ -13,6 +13,8 @@
     --font-size-content: 1.5rem; /* Content font size */
     --font-size-subheader: 1.75rem; /* Subheader font size */
     --font-size-subcontent: 1.25rem; /* Subcontent font size */
+    --transition-time: 0.6s;
+    --transition-time-background: 2500ms;
 }
 /* #003366 -blue #FF6F61 -darker peach #FFDAB9 -softer more pastel peach #55CDFC - cyan*/
 /* Dark Theme */

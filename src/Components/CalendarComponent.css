@@ -11,11 +11,11 @@
 }
 
 .fc-daygrid-day:hover {
-    background-color: var(--prg-fg-color);
+    background-color: var(--foreground-color);
     transition: all 250ms ease-in-out; 
 }
 .fc-event {
-    background-color: #007bff; 
+    background-color: var(--icon-color); 
     color: #fff; 
     border-radius: 5px; 
 }
@@ -29,8 +29,8 @@
     color: #cccccc; 
     font-size: 12px; 
 }
-.fc-daygrid-day-number {
-    color: #007bff !important; 
+td .fc-daygrid-day-top .fc-daygrid-day-number{
+    color: var(--primary-text-color) !important; 
     font-weight: bold; 
 }
 .fc-toolbar-title {
