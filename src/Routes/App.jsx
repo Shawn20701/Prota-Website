@@ -7,6 +7,7 @@ import Navbar from '../Components/Navbar'
 import Subheader from '../Components/subheader'
 import { Eventcontext } from '../Components/Eventcontext'
 import Pageheader from '../Components/Page-header'
+import MobileNavbar from '../Components/MobileNavbar'
 const contentMap = {
   1: (
     <>
@@ -86,6 +87,7 @@ function App() {
 
   return (
     <>
+      <MobileNavbar />
       <Navbar onHoverChange={setIsNavbarHovered}/>
       <div className={`App ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={eventMode}>
       <Pageheader />

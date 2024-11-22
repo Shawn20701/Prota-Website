@@ -11,6 +11,20 @@
 .navbar-hovered {
     margin-left: 10rem; 
 }
+@media (max-width: 600px){
+    .Dept-Container{
+      margin: 0;
+    }
+    .navbar-hovered {
+      margin-left: 0;
+    }
+    .Dept-Container.mobile-navbar-open{
+      margin-left: 100vw;
+    }
+    .Dept-Container.navbar-hovered{
+      margin: 0;
+    }
+}
 
 .title {
     font-size: var(--font-size-title);

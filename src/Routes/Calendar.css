@@ -11,6 +11,22 @@
 .navbar-hovered {
     margin-left: 10rem; 
   }
+  @media (max-width: 600px){
+    .Calendar-container {
+      margin: 0;
+    }
+    
+    .navbar-hovered {
+      margin-left: 0;
+    }
+    .Calendar-container.mobile-navbar-open{
+      margin-left: 100vw;
+    }
+    .Calendar-container.navbar-hovered{
+      margin: 0;
+    }
+}
+
 #Calendar{
     margin-bottom: 3rem;
 }

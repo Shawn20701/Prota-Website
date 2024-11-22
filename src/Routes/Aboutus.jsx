@@ -6,6 +6,7 @@ import { Eventcontext } from "../Components/Eventcontext";
 import Pageheader from '../Components/Page-header'
 import Navbar from "../Components/Navbar";
 import ImageMap from "../Components/ImageComponent";
+import MobileNavbar from "../Components/MobileNavbar";
 export default function Aboutus(){
     const [cursorStyle, setcursorStyle] = useState('default');
     const [isNavbarHovered, setIsNavbarHovered] = useState(false);
@@ -15,6 +16,7 @@ export default function Aboutus(){
     };
     return (
         <>
+        <MobileNavbar />
         <Navbar onHoverChange={setIsNavbarHovered}/>
         <div className={`About-Us-Container ${cursorStyle} ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={eventMode}>
             <Pageheader />

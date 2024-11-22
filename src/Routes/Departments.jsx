@@ -9,12 +9,14 @@ import '../css/event-themes.css'
 import Pageheader from '../Components/Page-header'
 import Navbar from '../Components/Navbar'
 import './index.css'
+import MobileNavbar from '../Components/MobileNavbar'
 export default function Departments(){
     const {isdark, eventMode} = useContext(Eventcontext);
     // eslint-disable-next-line no-unused-vars
     const [isNavbarHovered, setIsNavbarHovered] = useState(false);
     return (
         <>
+        <MobileNavbar />
         <Navbar onHoverChange={setIsNavbarHovered}/>
         <div className={`Dept-Container ${isNavbarHovered ? 'navbar-hovered' : ''}`} data-theme={isdark ? "dark" : "light"} data-event={eventMode}>
             

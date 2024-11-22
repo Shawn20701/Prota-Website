@@ -16,6 +16,21 @@
 @media (max-width: 600px){
     .About-Us-Container{overflow-x: hidden;}
 }
+@media (max-width: 600px){
+    .About-Us-Container {
+      margin: 0;
+    }
+    
+    .navbar-hovered {
+      margin-left: 0;
+    }
+    .About-Us-Container.mobile-navbar-open{
+      margin-left: 100vw;
+    }
+    .About-Us-Container.navbar-hovered{
+      margin: 0;
+    }
+}
 
 .page-header {
     font-family: var(--font-main);
@@ -51,6 +66,11 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 600px){
+    .list-container{
+        flex-direction: column;
+    }
+}
 .Mission-statement{
     font-size: var(--font-size-subheader);
     font-family: var(--font-main);
@@ -58,7 +78,7 @@
     text-align: center;
 }
 @media (max-width: 600px){
-    .list-container{font-size: 3rem}
+    .list-container{font-size: 1rem}
 }
 .list {
     display: flex;
@@ -83,7 +103,7 @@
     color: var(--tertiary-text-color);
 }
 @media (max-width: 600px){
-    .item{font-size: 3rem;}
+    .item{font-size: 1rem;}
 }
 .space {
     height: 5vh;

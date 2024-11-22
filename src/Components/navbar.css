@@ -5,6 +5,11 @@
     transition: width 0.6s; 
     z-index: 1000;
 }
+@media (max-width: 600px){
+    .navbar-container{
+        display: none;
+    }
+}
 .navbar-container:hover {
     width: 10rem;
 }
@@ -18,20 +23,8 @@
     height: 100vh;
     padding: 0; 
 }
-@media (max-width: 600px) {
-    .navbar-list {
-        flex-direction: row;
-        height: auto; 
-        justify-content: center; 
-    }
-    .navbar-container{
-        flex-direction: row;
-        width: 100vw;
-        height: 6rem;
-    }
-    .navbar-container:hover{
-        height: 10rem;
-    }
+.navbar-toggle{
+    display: none;
 }
 .navbar-item a{
     text-decoration: none !important;

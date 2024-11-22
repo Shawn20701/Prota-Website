@@ -1,4 +1,5 @@
-import './navbar.css'; 
+import './MobileNavbar.css';
+import './navbar.css' 
 import { useContext } from 'react';
 import { Eventcontext } from './Eventcontext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +10,7 @@ import HalloweenToggle from './Halloween';
 import { useState } from 'react';
 
 // eslint-disable-next-line react/prop-types
-export const Navbar = ({ onHoverChange }) => {
+export const MobileNavbar = () => {
     const { toggleDarkMode, HandleSpookyMode } = useContext(Eventcontext);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     
@@ -18,35 +19,33 @@ export const Navbar = ({ onHoverChange }) => {
       };
     return (
         <div>
-        <div className={`navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        &#9776; {/* Hamburger icon */}
+        <div className={`mobile-navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        &#9776;
         </div>
         <div
-            className={`navbar-container ${isMenuOpen ? 'open' : ''}`}
-            onMouseEnter={() => onHoverChange(true)}
-            onMouseLeave={() => onHoverChange(false)}
+            className={`mobile-navbar-container ${isMenuOpen ? 'open' : ''}`}
         >
-            <ul className={`navbar-list ${isMenuOpen ? 'open' : ''}`}>
-                <li className='navbar-item' onClick={HandleSpookyMode}>
+            <ul className={`mobile-navbar-list ${isMenuOpen ? 'open' : ''}`}>
+                <li className='mobile-navbar-item' onClick={HandleSpookyMode}>
                     <HalloweenToggle />
                 </li>
-                <li className='navbar-item'>
+                <li className='mobile-navbar-item'>
                     <FontAwesomeIcon className='icon' icon={faHome} color='#FFB3BA' />
-                    <a className='navbar-button' href='/'>Home</a>
+                    <a className='mobile-navbar-button' href='/'>Home</a>
                 </li>
-                <li className='navbar-item'>
+                <li className='mobile-navbar-item'>
                     <FontAwesomeIcon className='icon' icon={faInfoCircle} color='#FFB3BA' />
-                    <a className='navbar-button' href='/About-us'>Info</a>
+                    <a className='mobile-navbar-button' href='/About-us'>Info</a>
                 </li>
-                <li className='navbar-item'>
+                <li className='mobile-navbar-item'>
                     <FontAwesomeIcon className='icon' icon={faCalendarAlt} color='#FFB3BA' />
-                    <a className='navbar-button' href='/Calendar'>Calendar</a>
+                    <a className='mobile-navbar-button' href='/Calendar'>Calendar</a>
                 </li>
-                <li className='navbar-item'>
+                <li className='mobile-navbar-item'>
                     <FontAwesomeIcon className='icon' icon={faBook} color='#FFB3BA' />
-                    <a className='navbar-button' href='/about-us/Departments'>Sections</a>
+                    <a className='mobile-navbar-button' href='/about-us/Departments'>Sections</a>
                 </li>
-                <li className='navbar-item' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
+                <li className='mobile-navbar-item' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
                     <Toggle />
                 </li>
 
@@ -56,4 +55,4 @@ export const Navbar = ({ onHoverChange }) => {
     );
 }
 
-export default Navbar;
+export default MobileNavbar;
