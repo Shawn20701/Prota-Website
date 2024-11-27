@@ -31,19 +31,27 @@ export const Navbar = ({ onHoverChange }) => {
                     <HalloweenToggle />
                 </li>
                 <li className='navbar-item'>
-                    <FontAwesomeIcon className='icon' icon={faHome} color='#FFB3BA' />
-                    <a className='navbar-button' href='/'>Home</a>
+                    <button className='icon-button' onClick={() => window.location.href = '/'}>
+                    <FontAwesomeIcon className="icon" icon={faHome} color="#FFB3BA" />
+                    </button>
+                    <a href='/' className='navbar-button'>Home</a>
                 </li>
                 <li className='navbar-item'>
-                    <FontAwesomeIcon className='icon' icon={faInfoCircle} color='#FFB3BA' />
+                <button className='icon-button' onClick={() => window.location.href = '/About-us'} >
+                    <FontAwesomeIcon className="icon" icon={faInfoCircle} color="#FFB3BA" />
+                    </button>
                     <a className='navbar-button' href='/About-us'>Info</a>
                 </li>
                 <li className='navbar-item'>
-                    <FontAwesomeIcon className='icon' icon={faCalendarAlt} color='#FFB3BA' />
+                <button className='icon-button' onClick={() => window.location.href = '/Calendar'} >
+                    <FontAwesomeIcon className="icon" icon={faCalendarAlt} color="#FFB3BA" />
+                    </button>
                     <a className='navbar-button' href='/Calendar'>Calendar</a>
                 </li>
                 <li className='navbar-item'>
-                    <FontAwesomeIcon className='icon' icon={faBook} color='#FFB3BA' />
+                <button className='icon-button' onClick={() => window.location.href = '/about-us/Departments'}>
+                    <FontAwesomeIcon className="icon" icon={faBook} color="#FFB3BA" />
+                    </button>
                     <a className='navbar-button' href='/about-us/Departments'>Sections</a>
                 </li>
                 <li className='navbar-item' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>

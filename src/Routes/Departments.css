@@ -110,9 +110,7 @@
 .img-container {
     display: flex;
     position: relative;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 30rem;
+    justify-content: space-between;
     flex-wrap: wrap; 
 }
 
@@ -138,9 +136,7 @@
 .sub-img-container {
     display: flex;
     position: relative;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 30rem;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -164,9 +160,8 @@
     width: 135px;
     height: 160px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+    top: 200px;
+    left: 200px;
     content: '';
     background-image: conic-gradient(red, blue);
     z-index: -1;
@@ -183,9 +178,6 @@
     width: 132px;
     height: 135px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     content: '';
     background-image: conic-gradient(red, blue);
     z-index: -1;
@@ -202,9 +194,6 @@
     width: 132px;
     height: 200px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     content: '';
     background-image: conic-gradient(red, blue);
     z-index: -1;

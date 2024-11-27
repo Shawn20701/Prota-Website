@@ -46,7 +46,7 @@ export default function Departments(){
                     <h1 className='title'>3D-Design</h1>
                 </div>
                 <div className='subheader-container'>
-                    <p className='content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad magni, inventore dolores animi aliquam excepturi perspiciatis a laborum doloremque, id dolorem ullam. Laudantium distinctio quas maxime, eos ab quibusdam.</p>
+                    <p className='content'>3D-Design is a vital part of robotics we use this to create custom parts and model designs for our projects.</p>
                 </div>
                 <div className='title-container'>
                     <h1 className='title'>Building</h1>
@@ -58,14 +58,15 @@ export default function Departments(){
                     <h1 className='title'>Strategy</h1>
                 </div>
                 <div className='subheader-container'>
-                    <p className='content'>The goal of the Prota strategic department is to make our robot and team as effective and efficient as possible</p>
+                    <p className='content'>The goal of the Prota strategic department is to make our robot and team as effective and efficient as possible.</p>
                 </div>
                 <div className='title-container'>
                     <h1 className='title'>Outreach</h1>
                 </div>
                 <div className='subheader-container'>
-                    <p className='content'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad magni, inventore dolores animi aliquam excepturi perspiciatis a laborum doloremque, id dolorem ullam. Laudantium distinctio quas maxime, eos ab quibusdam.</p>
+                    <p className='content'>Outreach helps us to reach our main goal of communicating robotics and the benefits of steam to our community.</p>
                 </div>
+                <br></br>
             </div>
         </div>
         </>
