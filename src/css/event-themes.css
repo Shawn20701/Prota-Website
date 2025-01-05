@@ -106,12 +106,6 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
         --background-color: rgba(14, 0, 88, 0.88);
         --foreground-color: rgb(86, 6, 94);
 }
-[date-event='New_Years']{
-
-}
-[date-event='New_Years'][data-theme='dark']{
-
-}
 [date-event='Valentines'] {}
 
 [date-event='Valentines'][data-theme='dark'] {
