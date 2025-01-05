@@ -22,7 +22,7 @@ html, body {
   bottom: 0;
   width: 0;
   height: 4px;
-  background: linear-gradient(to right, red, blue);
+  background: linear-gradient(to right, var(--foreground-color), var(--tertiary-text-color));
   transition: width 0.3s ease;
   border-radius: 5px;
 }
@@ -99,7 +99,7 @@ p {
   overflow: hidden;
   display: flex;
   gap: 30px;
-  border-bottom: 3px solid gray;
+  border-bottom: 3px solid var(--foreground-color);
   font-size: 1.5rem;
   font-family: var(--font-main);
 }
@@ -122,18 +122,18 @@ p {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   border: none;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color var(--transition-time-background) ease-in-out;
   cursor: pointer;
-  transition: all 0.6s ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
   font-family: var(--font-main);
 }
 .main-page-sel:focus {
   scale: 1.2;
-  transition: all 0.6s ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
   color: var(--tertiary-text-color);
   border-radius: 5px;
   outline: none;
-  transition: background-color 250ms ease-in-out;
+  transition: background-color var(--transition-time-background) ease-in-out;
   border: none;
   cursor: pointer;
 }

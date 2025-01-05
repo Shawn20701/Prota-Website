@@ -108,6 +108,8 @@
 .space {
     height: 5vh;
     margin-bottom: 0;
+    background-color: var(--background-color);
+    transition: background-color var(--transition-time-background) ease-in-out;
 }
 .About-Us-Container.default {
     cursor: default;

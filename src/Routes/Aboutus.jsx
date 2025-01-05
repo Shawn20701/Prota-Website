@@ -32,7 +32,7 @@ export default function Aboutus(){
             </ul>
         </div>
         <ImageMap />
-        <div className="space"></div>
+        
         </>
     )
 }

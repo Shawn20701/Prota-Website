@@ -97,11 +97,14 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
 }
 [data-event='Winter']{
     --font-main: "Mountains of Christmas", sans-serif;
-    --background-color: white;
+    --background-color: rgb(187, 180, 250);
+    --foreground-color: rgb(234, 214, 236);
+    --foreground-text-color: rgba(4, 6, 32, 0.493);
 }
 [data-theme='dark'][data-event='Winter']{
         --font-main: "Mountains of Christmas", sans-serif;
-            --background-color: Black;
+        --background-color: rgba(14, 0, 88, 0.88);
+        --foreground-color: rgb(86, 6, 94);
 }
 [date-event='New_Years']{
 
