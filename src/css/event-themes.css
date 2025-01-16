@@ -103,8 +103,10 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
 }
 [data-theme='dark'][data-event='Winter']{
         --font-main: "Mountains of Christmas", sans-serif;
-        --background-color: rgba(14, 0, 88, 0.88);
-        --foreground-color: rgb(86, 6, 94);
+        --background-color: rgba(20, 17, 56, 0.88);
+        --foreground-color: rgb(177, 56, 56);
+        --foreground-text-color: rgba(255, 232, 232, 0.98);
+        --icon-color: rgba(241, 229, 173, 0.75);
 }
 [date-event='Valentines'] {}
 
