@@ -7,6 +7,7 @@ import Departments from './Routes/Departments.jsx'
 import Pointcalculator from './Routes/Pointcalculator.jsx'
 import { EventProvider } from './Components/Eventcontext.jsx'
 import Calendar from './Routes/Calendar.jsx'
+import Decode from './Routes/Decode.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/Calendar",
     element: <Calendar />
+  },
+  {
+    path: "/Decode",
+    element: <Decode />
   }
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

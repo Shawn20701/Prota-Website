@@ -1,0 +1,8 @@
+h1{
+font-size: var(--font-size-title);
+color: var(--tertiary-text-color);
+}
+
+p{
+font-size: var(--font-size-content);
+}

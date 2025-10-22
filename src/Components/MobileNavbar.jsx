@@ -8,7 +8,6 @@ import Toggle from './Toggle';
 import '../css/event-themes.css';
 import HalloweenToggle from './Halloween';
 import { useState } from 'react';
-
 // eslint-disable-next-line react/prop-types
 export const MobileNavbar = () => {
     const { toggleDarkMode, HandleSpookyMode } = useContext(Eventcontext);
@@ -22,9 +21,7 @@ export const MobileNavbar = () => {
         <div className={`mobile-navbar-toggle ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         &#9776;
         </div>
-        <div
-            className={`mobile-navbar-container ${isMenuOpen ? 'open' : ''}`}
-        >
+        <div className={`mobile-navbar-container ${isMenuOpen ? 'open' : ''}`}>
             <ul className={`mobile-navbar-list ${isMenuOpen ? 'open' : ''}`}>
                 <li className='mobile-navbar-item' onClick={HandleSpookyMode}>
                     <HalloweenToggle />
@@ -48,7 +45,6 @@ export const MobileNavbar = () => {
                 <li className='mobile-navbar-item' onClick={toggleDarkMode} style={{ cursor: 'pointer' }}>
                     <Toggle />
                 </li>
-
             </ul>
         </div>
         </div>

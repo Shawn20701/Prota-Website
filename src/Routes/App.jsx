@@ -26,16 +26,14 @@ Our mission is to celebrate our Creator and team diversity, promote gracious pro
   ),
   3: (
     <>
-    Our most recent event was the{' '}<a className='inserted-link' href='https://firstroboticsbc.org/ftc/centerstage-season/'>2023-2024 Centerstage challenge.</a>
+    Our most recent event was the{' '}<a className='inserted-link' href='/Decode'>2025-2026 Decode Season.</a>
     </>
   ),
   4: (
     <>
-      Our team recently went to{' '}
-      <a className='inserted-link' href='https://hishaven.org/'>
-        His Haven
-      </a>{' '}
-      to help teach kids how to build LEGO robots.
+      Our team over the summer ran the second offical PROTA 17222 Probotix event.
+      This event ran for one week in which kids from all accross the area came and developed lego robots 
+      and stem skills. On the last day we ran a competition using parts from older seasons and games specially developed for this competition.
     </>
   ),
   default: (

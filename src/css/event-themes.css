@@ -9,14 +9,15 @@
     --icon-color: #FFB3BA;
     --font-main: 'Open Sans', sans-serif; /* Main font for pages */
     --link-color: #dc143c; 
-    --font-size-title: 2.5rem; /* Title font size */
+    --link-underline-1: rgb(236, 174, 174);
+    --link-underline-2: rgb(123, 251, 255);
+    --font-size-title: 2rem; /* Title font size */
     --font-size-content: 1.5rem; /* Content font size */
     --font-size-subheader: 1.75rem; /* Subheader font size */
     --font-size-subcontent: 1.25rem; /* Subcontent font size */
     --transition-time: 0.6s;
     --transition-time-background: 2500ms;
 }
-/* #003366 -blue #FF6F61 -darker peach #FFDAB9 -softer more pastel peach #55CDFC - cyan*/
 /* Dark Theme */
 [data-theme='dark'] {
     --background-color: #1a1a1a; 
@@ -27,9 +28,11 @@
     --tertiary-text-color: #4169e1;
     --icon-color: #FF6F61;
     --link-color: #00ffff; 
+    --link-underline-1: rgb(159, 255, 252);
+    --link-underline-2: rgb(8, 0, 255);
 }
-
-/* Spooky Theme */
+ 
+/* Spooky Theme used for October*/
 [data-event='Spooky'] {
     --background-color: #fff8e1;
     --foreground-color: #ff5722;
@@ -40,6 +43,8 @@
     --icon-color: #4B0082;
     --font-main: 'Creepster', cursive; 
     --link-color: #6a1b9a; 
+    --link-underline-1: rgb(255, 127, 15);
+    --link-underline-2: rgb(32, 119, 44);
 }
 
 /* Scrollbar Styles for Spooky Theme */
@@ -72,7 +77,10 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --icon-color: #4B0082; 
     --font-main: 'Creepster', cursive; 
     --link-color: #ba68c8; 
+    --link-underline-1: rgb(255, 241, 44);
+    --link-underline-2: rgb(161, 11, 206);
 }
+/* Fall theme used for September and November */
 [data-event='Fall']{
     --background-color: rgba(246, 207, 134, 0.947);
     --foreground-color: rgb(252, 121, 121);
@@ -83,6 +91,8 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --icon-color:  rgb(87, 41, 41); 
     --font-main: 'Rye', open-sans; 
     --link-color: rgba(255, 166, 0, 0.788);
+    --link-underline-1: rgb(236, 125, 125);
+    --link-underline-2: rgb(225, 170, 103);
 }
 [data-event='Fall'][data-theme='dark']{
     --background-color: rgba(34, 28, 18, 0.947);
@@ -94,12 +104,17 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
     --icon-color:  rgb(87, 41, 41); 
     --font-main: 'Rye', open-sans; 
     --link-color: rgba(255, 166, 0, 0.788);
+    --link-underline-1: rgb(217, 172, 243);
+    --link-underline-2: rgb(115, 5, 5);
 }
+/* winter theme for December and January */
 [data-event='Winter']{
     --font-main: "Mountains of Christmas", sans-serif;
     --background-color: rgb(187, 180, 250);
     --foreground-color: rgb(234, 214, 236);
     --foreground-text-color: rgba(4, 6, 32, 0.493);
+    --link-underline-1: rgb(255, 202, 202);
+    --link-underline-2: rgb(138, 255, 189);
 }
 [data-theme='dark'][data-event='Winter']{
         --font-main: "Mountains of Christmas", sans-serif;
@@ -107,27 +122,47 @@ html[data-event='Spooky'] ::-webkit-scrollbar-thumb:hover {
         --foreground-color: rgb(177, 56, 56);
         --foreground-text-color: rgba(255, 232, 232, 0.98);
         --icon-color: rgba(241, 229, 173, 0.75);
+        --link-color: rgb(157, 242, 187);
+        --link-underline-1: rgb(133, 22, 22);
+        --link-underline-2: rgb(255, 184, 114);
 }
-[date-event='Valentines'] {}
-
-[date-event='Valentines'][data-theme='dark'] {
-
+/*Summer theme*/
+[data-event='summer']{
+        --font-main: "Mountains of Christmas", sans-serif;
+        --background-color: rgba(255, 170, 0, 0.88);
+        --foreground-color: rgb(255, 240, 32);
+        --foreground-text-color: rgba(255, 232, 232, 0.98);
+        --icon-color: rgba(241, 229, 173, 0.75);
+        --link-underline-1: rgb(1,1,1);
+        --link-underline-2: rgb(1,1,1);
 }
-[data-event='Patricks_day']{
-
+/*Spring theme*/
+[data-event='spring']{
+        --font-main: "Mountains of Christmas", sans-serif;
+        --background-color: rgba(39, 62, 17, 0.88);
+        --foreground-color: rgb(221, 214, 113);
+        --foreground-text-color: rgba(255, 232, 232, 0.98);
+        --icon-color: rgba(241, 229, 173, 0.75);
+        --link-underline-1: rgb(1,1,1);
+        --link-underline-2: rgb(1,1,1);
+} /*Yeah yk why this is here :3*/
+[data-event='gay']{
+    --font-main: "Bitcount Grid Single", sans-serif;
+        --background-color: #5BCEFA;
+        --foreground-color: #F5A9B8;
+        --foreground-text-color: rgba(255, 232, 232, 0.98);
+        --icon-color: rgba(241, 229, 173, 0.75);
+        --link-underline-1: rgb(1,1,1);
+        --link-underline-2: rgb(1,1,1);
 }
-[data-event='Patricks_day'][data-theme='dark']{
-
-}
-[data-event='Easter']{
-
-}
-[data-event='Easter'][data-theme='dark'] {
-
-}
-[data-event='March'] {
-
-}
-[data-event='March'][data-theme='dark'] {
-
+[data-event='gay'][data-theme="dark"]{
+     --font-main: "Yarndings 20", sans-serif;
+        --background-color: #FFB5D6;
+        --foreground-color: #FE8CBF;
+        --primary-text-color: #A50062;
+        --link-color: #D461A6;
+        --foreground-text-color: rgba(255, 232, 232, 0.98);
+        --icon-color: rgba(241, 229, 173, 0.75);
+        --link-underline-1: #26CEAA;
+        --link-underline-2: #5BCEFA;
 }

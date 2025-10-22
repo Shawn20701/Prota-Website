@@ -22,7 +22,7 @@ html, body {
   bottom: 0;
   width: 0;
   height: 4px;
-  background: linear-gradient(to right, var(--foreground-color), var(--tertiary-text-color));
+  background: linear-gradient(to right, var(--link-underline-1), var(--link-underline-2));
   transition: width 0.3s ease;
   border-radius: 5px;
 }
@@ -221,7 +221,7 @@ img {
   color: var(--tertiary-text-color);
 }
 #santa[data-santa='true'] {  
-  animation: santamove 10s linear 1 forwards;
+  animation: santamove 10s linear infinite forwards;
   width: 4em;
   height: 4em;
   aspect-ratio: 1/1;
@@ -238,8 +238,11 @@ img {
   0% {
     transform: translateX(100vw);
   }
+  50% {
+    transform: translateX(-10vw);
+  }
   100% {
-    transform: translateX(-100em);
+    transform: translateX(100vw);
   }
 }
 #main-page-img{

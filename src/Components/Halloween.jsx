@@ -7,25 +7,29 @@ import { faGhost, faSnowman, faFootball, faHeart} from '@fortawesome/free-solid-
 const HalloweenToggle = () => {
     const { setSpookyMode, setWinterMode, setFallMode,  setValentinesDayMode } = useContext(Eventcontext);
     const currentMonth = new Date().getMonth();
-
+/* Months start at 0 and not 1 for some reason */
     const monthIcons = {
-        11: {
+        11: { /* December */
             icon: faSnowman,
             handler: setWinterMode,
         },
-        10: {
+        10: { /* November */
             icon: faFootball,
             handler: setFallMode,
         },
-        9: {
+        9: { /* October */
             icon: faGhost,
             handler: setSpookyMode,
         },
-        0: {
+        8: { /* September */
+            icon: faFootball,
+            handler: setFallMode,
+        },
+        0: { /* January */
             icon: faSnowman,
             handler: setWinterMode,
         },
-        1: {
+        1: { /* Febuary */
             icon: faHeart,
             handler: setValentinesDayMode,
         },

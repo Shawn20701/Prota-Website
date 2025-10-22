@@ -21,6 +21,7 @@ export const EventProvider = ({ children }) => {
 
   const setWinterMode = () => {
     setEventMode(prev => (prev === 'Winter' ? '' : 'Winter'));
+
   };
   const setFallMode = () => {
     setEventMode(prev => (prev === 'Fall' ? '' : 'Fall'));
