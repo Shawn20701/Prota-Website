@@ -20,7 +20,7 @@ export const EventProvider = ({ children }) => {
   };
 
   const setWinterMode = () => {
-    setEventMode(prev => (prev === 'Winter' ? '' : 'Winter'));
+    setEventMode(prev => (prev === 'gay' ? '' : 'gay'));
 
   };
   const setFallMode = () => {
